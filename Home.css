@@ -151,7 +151,7 @@
     margin: 1px 0;
     height: 1px;
     width: 0%;
-    background-color: var(--primary);
+    background-color: var(--secondary);
     display: block;
     transition: all 0.3s;
     left: 0;
