@@ -5,6 +5,10 @@
     --highlightG: #848A67;
 }
 
+body {
+    height: -webkit-fill-available;
+}
+
 /* Main container styles */
 .main-container {
     position: relative;
