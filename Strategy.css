@@ -199,14 +199,25 @@
     width: max-content;
     font-size: 18px;
     font-weight: 600;
-    border-bottom: 1px var(--secondary) solid;
     text-align: center;
     color: #3E4045;
     opacity: 0.8;
 }
 
-.learn-more:hover {
-    opacity: 1;
+.learn-more:after {
+    content: '';
+    position: max-content;
+    margin: 1px 0;
+    height: 1px;
+    width: 0%;
+    background-color: var(--primary);
+    display: block;
+    transition: all 0.3s;
+    left: 0;
+}
+
+.learn-more:hover:after {
+    width: 100%;
 }
 
 @media screen and (min-width: 1280px) {}
