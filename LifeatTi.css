@@ -337,7 +337,7 @@
 
     .learn-more2 {
         font-size: 16px;
-        border-bottom: 1px #FAF8F5 solid;
+        border-bottom: 1px var(--secondary) solid;
     }
 
     .learn-more2:after {

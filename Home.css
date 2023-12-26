@@ -336,7 +336,7 @@ body {
 
     .learn-more {
         font-size: 16px;
-        border-bottom: 1px #FAF8F5 solid;
+        border-bottom: 1px var(--secondary) solid;
     }
 
     .learn-more:after {
