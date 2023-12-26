@@ -188,6 +188,11 @@
     border-bottom: 1px var(--primary) solid;
     text-align: center;
     color: var(--primary);
+    opacity: 0.8;
+}
+
+.learn-more:hover {
+    opacity: 1;
 }
 
 

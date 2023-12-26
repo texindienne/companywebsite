@@ -202,8 +202,12 @@
     border-bottom: 1px var(--secondary) solid;
     text-align: center;
     color: #3E4045;
+    opacity: 0.8;
 }
 
+.learn-more:hover {
+    opacity: 1;
+}
 
 @media screen and (min-width: 1280px) {}
 
