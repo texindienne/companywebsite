@@ -43,7 +43,11 @@ document.addEventListener("DOMContentLoaded", function () {
         navMenu.classList.toggle("active");
         if (navMenu.classList.contains("active")) {
             navbar.classList.add("scrolled");
-        } else if (window.scrollY < 50) {
+            disableScroll();
+        } else {
+            enableScroll();
+        } 
+        if (window.scrollY < 50 && !(navMenu.classList.contains("active"))) {
             navbar.classList.remove("scrolled");
         }
     }
@@ -54,5 +58,13 @@ document.addEventListener("DOMContentLoaded", function () {
         hamburger.classList.remove("active");
         navMenu.classList.remove("active");
         navbar.classList.remove("scrolled");
+    }
+
+    function disableScroll() {
+        document.body.style.overflow = 'hidden';
+    }
+    
+    function enableScroll() {
+        document.body.style.overflow = ''; // Reset to default value
     }
 });
