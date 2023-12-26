@@ -1,0 +1,356 @@
+:root {
+    --primary: #FAF8F5;
+    --secondary: #3E4045;
+    --highlightB: #896B60;
+    --highlightG: #848A67;
+}
+
+/* Main container styles */
+.main-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./Images/WhoWeAre/Innovationweave.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--secondary);
+    font-family: 'Cormorat Garamond', serif;
+
+}
+
+/* Artistry text styles */
+.artistry-text {
+    top: 35%;
+    width: 60%;
+    position: absolute;
+    left: 20%;
+    text-align: center;
+    color: #FAF7F5;
+    font-size: 96px;
+    font-style: italic;
+    font-weight: 500;
+}
+
+/* Container styles */
+.container {
+    width: 100%;
+    height: 100%;
+    padding: 70px 40px;
+    background: #FAF8F5;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    display: inline-flex;
+    gap: 30px;
+}
+
+.core-values-heading {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Title styles */
+.title {
+    align-self: stretch;
+    text-align: center;
+    color: #3E4045;
+    font-size: 32px;
+    font-weight: 600;
+    word-wrap: break-word;
+}
+
+.text-content {
+    margin: auto;
+    align-self: stretch;
+    text-align: justify;
+    color: #3E4045;
+    font-size: 18px;
+    font-weight: 500;
+    word-wrap: break-word;
+    width: 80%;
+}
+
+
+/* Core values section styles */
+.pillar-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.pillar1 {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.pillar2 {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.pillar-image-container {
+    max-width: 250px;
+    border-radius: 70px;
+    padding: 40px;
+    background-color: #737e8b;
+    align-items: center;
+    justify-content: center;
+}
+
+.pillar-image {
+    max-width: 100%;
+}
+
+.pillar-details {
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.pillar-title {
+    text-align: center;
+    color: #3E4045;
+    font-size: 24px;
+    font-weight: 600;
+    word-wrap: break-word;
+}
+
+.pillar-description {
+    text-align: justify;
+    color: #3E4045;
+    font-size: 18px;
+    font-weight: 500;
+    word-wrap: break-word;
+}
+
+/* Styles for sustainability section */
+.sustainability {
+    padding-bottom: 70px;
+    background: #FAF8F5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+/* Styles for sustainability title */
+.sustainability-title {
+    text-align: center;
+    color: #3E4045;
+    font-size: 36px;
+    font-weight: 600;
+    word-wrap: break-word;
+}
+
+/* Styles for sustainability approach details */
+.sustainability-pillars {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+/* Styles for each sustainability approach detail */
+.sustainability-pillar {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+    display: inline-flex;
+    max-width: 500px;
+    padding: 0 35px;
+}
+
+/* Styles for sustainability approach titles */
+.pillar-circle {
+    max-width: 250px;
+    border-radius: 70px;
+    padding: 40px;
+    background: #848A67;
+    border-radius: 9999px;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+.pillar-img {
+    width: 100%;
+}
+
+/* Styles for sustainability approach descriptions */
+.pillar-description {
+    font-size: 18px;
+}
+
+.learn-more {
+    width: max-content;
+    font-size: 18px;
+    font-weight: 600;
+    border-bottom: 1px var(--secondary) solid;
+    text-align: center;
+    color: #3E4045;
+}
+
+
+@media screen and (min-width: 1280px) {}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 1024px) {
+    .pillar-image-container {
+        max-width: 200px;
+    }
+
+    .pillar-circle {
+        max-width: 200px;
+    }
+
+    .pillar1 {
+        width: 100%;
+    }
+    
+    .pillar2 {
+        width: 100%;
+    }
+
+    .text-content {
+        width: 100%;
+    }
+
+    /* Styles for sustainability section */
+    .sustainability {
+        padding: 0 40px 50px 40px;
+    }
+
+    .sustainability-pillar {
+        padding: 0;
+    }
+
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+
+    /* Artistry text styles */
+    .artistry-text {
+        top: 35%;
+        font-size: 72px;
+    }
+
+    .container {
+        padding: 50px 30px;
+    }
+
+    .core-values-heading {
+        gap: 10px;
+    }
+
+    /* Title styles */
+    .title {
+        font-size: 30px;
+    }
+
+    .text-content {
+        font-size: 16px;
+    }
+
+
+    /* Core values section styles */
+    .pillar-section {
+        gap: 15px;
+    }
+
+    .pillar1 {
+        flex-direction: column-reverse;
+        width: 100%;
+        gap: 15px;
+    }
+    
+    .pillar2 {
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+    }
+
+    .pillar-details {
+        gap: 10px;
+    }
+    
+
+    .pillar-image-container {
+        max-width: 150px;
+        border-radius: 40px;
+        padding: 30px;
+    }
+
+    .pillar-title {
+        font-size: 18px;
+    }
+
+    .pillar-description {
+        text-align: justify;
+        color: #3E4045;
+        font-size: 18px;
+        font-weight: 500;
+        word-wrap: break-word;
+    }
+
+    /* Styles for sustainability section */
+    .sustainability {
+        gap: 30px;
+    }
+
+    /* Styles for sustainability title */
+    .sustainability-title {
+        font-size: 30px;
+    }
+
+    /* Styles for sustainability approach details */
+    .sustainability-pillars {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    /* Styles for sustainability approach details */
+    .sustainability-pillar {
+        gap: 10px;
+    }
+
+    /* Styles for sustainability approach descriptions */
+    .pillar-description {
+        font-size: 16px;
+    }
+
+    .pillar-circle {
+        width: 150px;
+        height: 150px;
+        padding: 30px;
+    }
+
+    .learn-more {
+        font-size: 16px;
+    }
+}
+
+/* Small devices such as large phones (640px and up) */
+@media screen and (max-width: 540px) {
+
+    /* Artistry text styles */
+    .artistry-text {
+        top: 40%;
+        font-size: 56px;
+    }
+}

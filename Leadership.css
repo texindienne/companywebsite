@@ -1,0 +1,264 @@
+:root {
+    --primary: #FAF8F5;
+    --secondary: #3E4045;
+    --highlightB: #896B60;
+    --highlightG: #798760;
+}
+
+/* Main container styles */
+.main-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./Images/Leadership/Background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--secondary);
+}
+
+/* Artistry text styles */
+.artistry-text {
+    top: calc(50% - 40px);
+    width: 60%;
+    position: absolute;
+    left: 20%;
+    text-align: center;
+    color: #FAF7F5;
+    font-size: 96px;
+    font-style: italic;
+    font-weight: 500;
+}
+
+/* Styles for the container */
+.container {
+    width: 100%;
+    padding: 70px 40px;
+    background: #FAF8F5;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+}
+
+/* Section styles */
+.section {
+    align-self: stretch;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+    display: flex;
+    padding-bottom: 30px;
+}
+
+/* Title styles */
+.title {
+    align-self: stretch;
+    text-align: center;
+    color: #3E4045;
+    font-size: 32px;
+    font-weight: 600;
+    word-wrap: break-word;
+}
+
+.team {
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Team member styles */
+.team-member {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    display: inline-flex;
+}
+
+/* Member image styles */
+.member-img {
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.member-details {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Member name styles */
+.member-name {
+    text-align: center;
+    color: black;
+    font-size: 24px;
+    font-weight: 600;
+    word-wrap: break-word;
+}
+
+/* Member role styles */
+.member-role {
+    text-align: center;
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    word-wrap: break-word;
+}
+
+/* Founder message styles */
+.founder-message {
+    max-width: 1000px;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    display: inline-flex;
+}
+
+/* Founder image styles */
+.founder-img {
+    max-width: 400px;
+    max-height: 400px;
+    border-radius: 200px;
+}
+
+/* Founder quote styles */
+.founder-quote {
+    flex: 1 1 0;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 15px;
+    display: inline-flex;
+}
+
+/* Founder message styles */
+.quote {
+    align-self: stretch;
+    color: #3E4045;
+    font-size: 18px;
+    font-weight: 500;
+    font-style: italic;
+    word-wrap: break-word;
+}
+
+/* Team image styles */
+.team-img {
+    max-width: 100%;
+}
+
+/* CTA styles */
+.cta {
+    height: 179.58px;
+    padding: 30px;
+    background: #3E4045;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    display: flex;
+}
+
+/* CTA title styles */
+.cta-title {
+    align-self: stretch;
+    text-align: center;
+    color: #FAF8F5;
+    font-size: 32px;
+    font-weight: 600;
+    word-wrap: break-word;
+}
+
+/* CTA description styles */
+.cta-description {
+    align-self: stretch;
+    text-align: center;
+    color: #FAF8F5;
+    font-size: 20px;
+    font-weight: 500;
+    word-wrap: break-word;
+}
+
+.learn-more {
+    width: max-content;
+    font-size: 18px;
+    font-weight: 500;
+    border-bottom: 1px var(--primary) solid;
+    text-align: center;
+    color: var(--primary);
+}
+
+
+@media screen and (max-width: 1024px) {
+    .team {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    /* Artistry text styles */
+    .artistry-text {
+        font-size: 72px;
+    }
+
+    .container {
+        padding: 50px 30px;
+    }
+
+    /* Founder message styles */
+    .founder-message {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    /* section title */
+    .title {
+        font-size: 30px;
+    }
+
+    .member-details {
+        gap: 10px;
+    }
+
+    /* Service title */
+    .member-name {
+        font-size: 18px;
+    }
+
+    /* Service description */
+    .member-role {
+        font-size: 16px;
+    }
+
+    .quote {
+        font-size: 16px;
+    }
+
+    .cta {
+        gap: 10px;
+    }
+
+    .cta-title {
+        font-size: 30px;
+    }
+
+    .cta-description {
+        font-size: 18px;
+    }
+
+    .learn-more {
+        font-size: 16px;
+    }
+}
+
+/* Small devices such as large phones (640px and up) */
+@media screen and (max-width: 540px) {
+    /* Artistry text styles */
+    .artistry-text {
+        font-size: 56px;
+    }
+}

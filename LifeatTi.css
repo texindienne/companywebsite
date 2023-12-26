@@ -1,0 +1,321 @@
+:root {
+    --primary: #FAF8F5;
+    --secondary: #3E4045;
+    --highlightB: #A9714B;
+    --highlightG: #848A67;
+}
+
+/* Main container styles */
+.main-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./Images/Careers/CareerBack.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--primary);
+}
+
+/* Artistry text styles */
+.artistry-text {
+    top: 30%;
+    width: 60%;
+    position: absolute;
+    left: 20%;
+    text-align: center;
+    color: var(--primary);
+    font-size: 96px;
+    font-style: italic;
+    font-weight: 500;
+}
+
+/* Container styles */
+.container {
+    width: 100%;
+    height: 100%;
+    padding: 70px 40px;
+    background: #FAF8F5;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    display: inline-flex;
+    gap: 30px;
+}
+
+/* Title styles */
+.title {
+    align-self: stretch;
+    text-align: center;
+    color: #3E4045;
+    font-size: 32px;
+    font-weight: 600;
+    word-wrap: break-word;
+}
+
+/* Section content styles */
+.section-content {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+/* Text content styles */
+.text-content {
+    margin: auto;
+    max-width: 1000px;
+    align-self: stretch;
+    text-align: justify;
+    color: #3E4045;
+    font-size: 18px;
+    font-weight: 500;
+    word-wrap: break-word;
+}
+
+/* Section image styles */
+.section-image {
+    height: 70vh;
+    background-image: url(./Images/Careers/Career1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Feature styles */
+.feature {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Feature title styles */
+.feature-title {
+    max-width: 1000px;
+    color: #3E4045;
+    font-size: 18px;
+    font-weight: 600;
+    word-wrap: break-word;
+}
+
+/* Feature description styles */
+.feature-description {
+    max-width: 1000px;
+    left: 0px;
+    top: 39px;
+    text-align: justify;
+    color: #3E4045;
+    font-size: 18px;
+    font-weight: 500;
+    word-wrap: break-word;
+}
+
+/* Section image styles */
+.section-image2 {
+    height: 70vh;
+    background-image: url(./Images/Careers/Career3.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section-how {
+    display: flex;
+    gap: 80px;
+}
+
+.img-container {
+    width: 35vw;
+}
+
+.how-img {
+    width: 100%;
+}
+
+.how-text-container {
+    max-width: 500px;
+    align-self: stretch;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    display: inline-flex;
+}
+
+.how-text-item {
+    align-self: stretch;
+    text-align: justify;
+}
+
+.how-text-title {
+    color: #3E4045;
+    font-size: 18px;
+    font-weight: 600;
+    word-wrap: break-word;
+}
+
+.how-text-content {
+    color: #3E4045;
+    font-size: 18px;
+    font-weight: 500;
+    word-wrap: break-word;
+}
+
+/* CTA styles */
+.cta {
+    padding: 30px;
+    background: #3E4045;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    display: flex;
+}
+
+/* CTA title styles */
+.cta-title {
+    align-self: stretch;
+    text-align: center;
+    color: #FAF8F5;
+    font-size: 32px;
+    font-weight: 600;
+    word-wrap: break-word;
+}
+
+/* CTA description styles */
+.cta-description {
+    align-self: stretch;
+    text-align: center;
+    color: #FAF8F5;
+    font-size: 18px;
+    font-weight: 500;
+    word-wrap: break-word;
+}
+
+.learn-more {
+    width: max-content;
+    font-size: 18px;
+    font-weight: 500;
+    border-bottom: 1px var(--primary) solid;
+    text-align: center;
+    color: var(--primary);
+}
+
+.learn-more2 {
+    width: max-content;
+    font-size: 18px;
+    font-weight: 500;
+    border-bottom: 1px var(--secondary) solid;
+    text-align: center;
+    color: var(--secondary);
+}
+
+
+
+
+@media screen and (min-width: 1280px) {}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 1024px) {
+
+    /* Artistry text styles */
+    .artistry-text {
+        top: 20%;
+    }
+
+    .img-container {
+        display: none;
+    }
+
+    .how-img {
+        display: none;
+    }
+
+    .how-text-container {
+        max-width: 80%;
+    }
+
+    .section-how {
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+
+    /* Artistry text styles */
+    .artistry-text {
+        top: 25%;
+        font-size: 72px;
+    }
+
+    .container {
+        padding: 50px 30px;
+    }
+
+    .how-text-title {
+        font-size: 18px;
+    }
+
+    .how-text-content {
+        font-size: 18px;
+    }
+
+    .how-text-container {
+        max-width: 90%;
+    }
+
+    /* Title styles */
+    .title {
+        font-size: 30px;
+    }
+
+    /* Text content styles */
+    .text-content {
+        font-size: 16px;
+    }
+
+    /* Feature title styles */
+    .feature-title {
+        font-size: 18px;
+    }
+
+    .how-text-title {
+        font-size: 16px;
+    }
+
+    .how-text-content {
+        font-size: 16px;
+    }
+
+    /* CTA title styles */
+    .cta-title {
+        font-size: 30px;
+    }
+
+    /* CTA description styles */
+    .cta-description {
+        font-size: 16px;
+    }
+
+    .learn-more {
+        font-size: 16px;
+    }
+
+    .learn-more2 {
+        font-size: 16px;
+    }
+
+    .cta {
+        gap: 10px;
+    }
+}
+
+/* Small devices such as large phones (640px and up) */
+@media screen and (max-width: 540px) {
+
+    /* Artistry text styles */
+    .artistry-text {
+        top: 25%;
+        font-size: 56px;
+    }
+}
