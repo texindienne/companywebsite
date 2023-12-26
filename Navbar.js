@@ -5,28 +5,13 @@
 
 window.addEventListener("load", () => {
     const loader = document.querySelector(".loader");
-    const loaderStartTime = Date.now();
 
-    setTimeout(() => {
-        loader.classList.add("loader--hidden");
+    loader.classList.add("loader--hidden");
 
-        loader.addEventListener("transitionend", () => {
-            const loaderEndTime = Date.now();
-            const loaderDuration = loaderEndTime - loaderStartTime;
+    if (document.body.contains(loader)) {
+        document.body.removeChild(loader);
+    }
 
-            if (loaderDuration < 1000) {
-                setTimeout(() => {
-                    if (document.body.contains(loader)) {
-                        document.body.removeChild(loader);
-                    }
-                }, 1000 - loaderDuration);
-            } else {
-                if (document.body.contains(loader)) {
-                    document.body.removeChild(loader);
-                }
-            }
-        });
-    }, 2000); // Ensure the loader stays visible for 2 seconds
 });
 
 document.addEventListener("DOMContentLoaded", function () {

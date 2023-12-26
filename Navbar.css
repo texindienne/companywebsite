@@ -204,6 +204,7 @@ a {
 
     .nav-item {
         margin: 2.5rem 0;
+        z-index: 999;
     }
 
     .nav-item:hover {
@@ -290,6 +291,10 @@ a {
 }
 
 .navbar.scrolled .nav-link:after {
+    background-color: var(--secondary);
+}
+
+.navbar.scrolled .nav-link-drop:after {
     background-color: var(--secondary);
 }
 

@@ -105,6 +105,7 @@
 .service-icon {
     width: 150px;
     height: 150px;
+    padding: 30px;
     background-color: var(--highlightB);
     border-radius: 50%;
     position: relative;
@@ -334,6 +335,15 @@
 
     .news-item {
         gap: 10px;
+    }
+
+    .learn-more {
+        font-size: 16px;
+        border-bottom: 1px #FAF8F5 solid;
+    }
+
+    .learn-more:after {
+        display: none;
     }
 }
 
