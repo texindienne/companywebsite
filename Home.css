@@ -13,15 +13,8 @@
     background-image: url(./Images/Home/HomeMain.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center top; 
     background-color: var(--secondary);
-}
-
-/* Main image styles */
-.main-image {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
 }
 
 /* View collection styles */
