@@ -130,7 +130,7 @@
             <div class="cta">
                 <div class="cta-title">Work at TexIndienne</div>
                 <div class="cta-description">Join the Fabric of Innovation: Careers at TI</div>
-                <a href="./LifeatTi.html" class="learn-more">View Careers</a>
+                <a href="./LifeatTi" class="learn-more">View Careers</a>
             </div>
         </div>
     </div>
@@ -155,7 +155,7 @@
                     </div>
                     <div class="footer-heading-col collection-col">
                         <div class="footer-heading">Collections</div>
-                        <a href="./Collection.html" class="footer-collection">Mosaic</a>
+                        <a href="./Collection" class="footer-collection">Mosaic</a>
                     </div>
                     <div class="footer-heading-col">
                         <div class="footer-heading">Located at</div>
