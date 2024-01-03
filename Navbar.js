@@ -3,15 +3,23 @@
 //     --highlightB: #896B60;
 //     --highlightG: #848A67;
 
-window.addEventListener("load", () => {
-    const loader = document.querySelector(".loader");
+function disableScroll() {
     document.body.style.overflow = 'hidden';
+}
+
+function enableScroll() {
+    document.body.style.overflow = ''; // Reset to default value
+}
+
+window.addEventListener("load", () => {
+    disableScroll();
+    const loader = document.querySelector(".loader");
 
     loader.classList.add("loader--hidden");
 
     if (document.body.contains(loader)) {
         document.body.removeChild(loader);
-        document.body.style.overflowY = 'auto';
+        enableScroll();
     }
 
 });
@@ -60,13 +68,5 @@ document.addEventListener("DOMContentLoaded", function () {
         hamburger.classList.remove("active");
         navMenu.classList.remove("active");
         navbar.classList.remove("scrolled");
-    }
-
-    function disableScroll() {
-        document.body.style.overflow = 'hidden';
-    }
-    
-    function enableScroll() {
-        document.body.style.overflow = ''; // Reset to default value
     }
 });
