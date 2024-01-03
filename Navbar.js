@@ -5,11 +5,13 @@
 
 window.addEventListener("load", () => {
     const loader = document.querySelector(".loader");
+    document.body.style.overflow = 'hidden';
 
     loader.classList.add("loader--hidden");
 
     if (document.body.contains(loader)) {
         document.body.removeChild(loader);
+        document.body.style.overflowY = 'auto';
     }
 
 });
