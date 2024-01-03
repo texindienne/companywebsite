@@ -107,6 +107,22 @@
     display: none;
 }
 
+.address:hover {
+    opacity: 0.8;
+}
+
+.phone:hover {
+    opacity: 0.8;
+}
+
+.footer-collection:hover {
+    opacity: 0.8;
+}
+
+.footer-social-img:hover {
+    opacity: 0.8;
+}
+
 @media screen and (max-width: 1024px) {
     .hours-col {
         display: none;
