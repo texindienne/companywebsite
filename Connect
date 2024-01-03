@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="origin">
     <link href="./Navbar.css" rel="stylesheet" />
     <link href="./Footer.css" rel="stylesheet" />
-    <link href="./Leadership.css" rel="stylesheet" />
+    <link href="./Connect.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -14,37 +15,39 @@
         rel="stylesheet">
 </head>
 <script src="./Navbar.js"></script>
+<script src="https://kit.fontawesome.com/b172f043b0.js" crossorigin="anonymous"></script>
 
 <body>
     <div class="loader">
         <img src="./Images/TI.png" class="logoani">
     </div>
+
     <header class="header">
         <nav class="navbar">
             <a href="./" class="nav-logo">TEXINDIENNE</a>
             <ul class="nav-menu">
                 <li class="nav-item">
                     <div class="nav-link-drop">WHO WE ARE</div>
-                    <ul class="drop-down">
-                        <li> <a href="./Strategy.html" class="nav-sub-link"> OUR STRATEGY </a> </li>
-                        <li> <a href="./Values.html" class="nav-sub-link"> VALUES </a> </li>
+                    <ul class="drop-down"> 
+                        <li> <a href="./Strategy" class="nav-sub-link"> OUR STRATEGY </a> </li>
+                        <li> <a href="./Values" class="nav-sub-link"> VALUES </a> </li>
                     </ul>
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link">COLLECTION</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item"> 
                     <div class="nav-link-drop">CAREERS</div>
-                    <ul class="drop-down">
-                        <li> <a href="./LifeatTi.html" class="nav-sub-link"> LIFE AT TI </a> </li>
+                    <ul class="drop-down"> 
+                        <li> <a href="./LifeatTi" class="nav-sub-link"> LIFE AT TI </a> </li>
                         <li> <a href="#" class="nav-sub-link"> JOIN US </a> </li>
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a href="./Leadership.html" class="nav-link">LEADERSHIP</a>
+                    <a href="./Leadership" class="nav-link">LEADERSHIP</a>
                 </li>
                 <li class="nav-item">
-                    <a href="./Connect.html" class="nav-link">CONNECT</a>
+                    <a href="./Connect" class="nav-link">CONNECT</a>
                 </li>
             </ul>
             <div class="hamburger">
@@ -56,83 +59,69 @@
     </header>
 
     <div class="main-container">
-        <div class="artistry-text">Leadership</div>
+        <div class="artistry-text">Connect</div>
     </div>
 
     <div class="container">
-        <div class="section">
-            <div class="title">Management</div>
-            <div class="team">
-
-                <div class="team-member">
-                    <img class="member-img" src="./Images/Leadership/Me.png" alt="Member Image">
-                    <div class="member-details">
-                        <div class="member-name">Archit Jain</div>
-                        <div class="member-role">Founder</div>
-                    </div>
-                </div>
-
-                <div class="team-member">
-                    <img class="member-img" src="./Images/Leadership/Rando2.png" alt="Member Image">
-                    <div class="member-details">
-                        <div class="member-name">Emily Chang</div>
-                        <div class="member-role">Head of Marketing & Sales</div>
-                    </div>
-                </div>
-
-                <div class="team-member">
-                    <img class="member-img" src="./Images/Leadership/Rando3.png" alt="Member Image">
-                    <div class="member-details">
-                        <div class="member-name">John Jacobs</div>
-                        <div class="member-role">Head of Finance</div>
-                    </div>
-                </div>
-
-                <div class="team-member">
-                    <img class="member-img" src="./Images/Leadership/Rando4.png" alt="Member Image">
-                    <div class="member-details">
-                        <div class="member-name">Van Dyke</div>
-                        <div class="member-role">Head of Operations</div>
-                    </div>
-                </div>
-
-                <div class="team-member">
-                    <img class="member-img" src="./Images/Leadership/Rando1.png" alt="Member Image">
-                    <div class="member-details">
-                        <div class="member-name">Gordan Schmidt</div>
-                        <div class="member-role">Technology Administrator</div>
-                    </div>
-                </div>
-
+        <div class="title">BlogTex</div>
+        <a class="blog" target="_blank" href="https://texindienne.wixsite.com/media/post/texindienne-a-tale-woven-with-passion-and-purpose">
+            <img class="image" src="./Images/Media/logo.png" />
+            <div class="content">
+                <div class="date">28 December 2023</div>
+                <div class="blog-title">TexIndienne: A Tale Woven with Passion and Purpose</div>
+                <div class="description">Unveil the narrative behind TexIndienne's fabric journey—where passion meets purpose, tradition intertwines with innovation, and fabrics become storytellers. </div>
             </div>
-        </div>
-        <div class="section">
-            <div class="title">Message from the Founder</div>
-            <div class="founder-message">
-                <img class="founder-img" src="./Images/Leadership/Me.png" alt="Founder Image">
-                <div class="founder-quote">
-                    <div class="quote">
-                        I founded this company driven by a singular purpose: to
-                        redefine the fabric sourcing journey for garment
-                        manufacturers. Fabric isn't merely a material; it's the
-                        essence that breathes life into every garment. Recognizing
-                        its pivotal role, I embarked on this journey to streamline
-                        and elevate the fabric procurement process.
+        </a>        
+        <a href="https://texindienne.wixsite.com/media" target="_blank" class="learn-more">View BlogTex</a>
+    </div>
+
+    <div class="container" style="padding-top: 0;">
+        <div class="title">Contact Us</div>
+            <div class="contact-content">
+                <div class="left-side">
+                    <div class="address details">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="topic">Address</div>
+                        <a href="https://maps.app.goo.gl/3mCSsRYmYAyyG5wS6" 
+                            target="_blank" class="text-one">
+                            Lower Parel,<br/>
+                            Mumbai, 40013<br/>
+                            Maharashtra<br/>
+                            India
+                        </a>
                     </div>
+                    <div class="phone details">
+                        <i class="fas fa-phone-alt"></i>
+                        <div class="topic">Phone</div>
+                        <a href="tel:+918591392454" style="font-family: 'Garamond';" class="text-one">+91 8591392454</a>
+                    </div>
+                    <div class="email details">
+                        <i class="fas fa-envelope"></i>
+                        <div class="topic">Email</div>
+                        <a href="mailto:texindienne@gmail.com" class="text-one">texindienne@gmail.com</a>
+                    </div>
+                </div>
+                <div class="right-side">
+                    <div class="topic-text">Send us a message</div>
+                    <p>Connecting Through Fabric, Crafting Relationships</p>
+                    <form action="https://formsubmit.io/send/721abaab-44e3-42d4-8e11-3114b07dc9c3" method="POST">
+                        <input name="_redirect" type="hidden" id="name" value="https://www.texindienne.com">
+                        <div class="input-box">
+                            <input name="name" type="text" placeholder="Enter your name" required>
+                        </div>
+                        <div class="input-box">
+                            <input name="email" type="text" placeholder="Enter your email" required>
+                        </div>
+                        <div class="input-box message-box">
+                            <textarea placeholder="Message"></textarea>
+                        </div>
+                        <input name="_formsubmit_id" type="text" style="display:none">
+                        <div class="button">
+                            <input type="submit" value="Submit">
+                        </div>
+                    </form>
                 </div>
             </div>
-        </div>
-        <div class="section">
-            <div class="title">The Team</div>
-            <img class="team-img" src="./Images/Leadership/Video.png" alt="Team Image">
-        </div>
-        <div class="section" style="padding-bottom: 0px;">
-            <div class="cta">
-                <div class="cta-title">Work at TexIndienne</div>
-                <div class="cta-description">Join the Fabric of Innovation: Careers at TI</div>
-                <a href="./LifeatTi.html" class="learn-more">View Careers</a>
-            </div>
-        </div>
     </div>
 
     <footer>
@@ -199,7 +188,7 @@
                 </div>
             </div>
         </div>
-    </footer>  
+    </footer>    
 </body>
 
 </html>
