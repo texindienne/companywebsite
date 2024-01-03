@@ -178,6 +178,10 @@
   margin-bottom: 5px;
 }
 
+.details:hover {
+  opacity: 0.8;
+}
+
 .details .topic {
   font-size: 18px;
   font-weight: 600;
@@ -240,7 +244,7 @@
   margin-top: 12px;
 }
 
-.right-side .button input[type="button"] {
+.right-side .button input[type="submit"] {
   color: var(--secondary);
   font-size: 18px;
   outline: none;
@@ -253,7 +257,7 @@
   border: 2px solid var(--primary);
 }
 
-.button input[type="button"]:hover {
+.button input[type="submit"]:hover {
   background-color: var(--secondary);
   color: var(--primary);
 }

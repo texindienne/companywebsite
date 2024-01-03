@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="origin">
     <link href="./Navbar.css" rel="stylesheet" />
     <link href="./Footer.css" rel="stylesheet" />
     <link href="./Connect.css" rel="stylesheet" />
@@ -103,18 +104,20 @@
                 <div class="right-side">
                     <div class="topic-text">Send us a message</div>
                     <p>Connecting Through Fabric, Crafting Relationships</p>
-                    <form action="#">
+                    <form action="https://formsubmit.io/send/721abaab-44e3-42d4-8e11-3114b07dc9c3" method="POST">
+                        <input name="_redirect" type="hidden" id="name" value="https://www.texindienne.com">
                         <div class="input-box">
-                            <input type="text" placeholder="Enter your name">
+                            <input name="name" type="text" placeholder="Enter your name" required>
                         </div>
                         <div class="input-box">
-                            <input type="text" placeholder="Enter your email">
+                            <input name="email" type="text" placeholder="Enter your email" required>
                         </div>
                         <div class="input-box message-box">
                             <textarea placeholder="Message"></textarea>
                         </div>
+                        <input name="_formsubmit_id" type="text" style="display:none">
                         <div class="button">
-                            <input type="button" value="Send Now">
+                            <input type="submit" value="Submit">
                         </div>
                     </form>
                 </div>
