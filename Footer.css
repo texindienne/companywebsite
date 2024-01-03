@@ -96,15 +96,14 @@
 
 .social-icons {
     display: flex;
-    gap: 20px;
-
+    gap: 15px;
 }
 
 .footer-social-img {
     height: 26px;
 }
 
-.social-icons-mob {
+.social-icons-mobile {
     display: none;
 }
 
@@ -169,6 +168,12 @@
     .reach-us-mob {
         display: flex;
         flex-direction: column;
+    }
+
+    .social-icons-mobile {
+        display: flex;
+        gap: 15px;
+
     }
 }
 /* Media query for smaller screens */

@@ -235,6 +235,10 @@ body {
     gap: 15px;
 }
 
+.news-item:hover {
+    opacity: 0.8;
+}
+
 .news-image {
     width: 200px;
     height: 200px;
