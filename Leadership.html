@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b172f043b0.js" crossorigin="anonymous"></script>  
     <link href="./Navbar.css" rel="stylesheet" />
     <link href="./Footer.css" rel="stylesheet" />
     <link href="./Leadership.css" rel="stylesheet" />
@@ -21,39 +22,50 @@
     </div>
 
     <header class="header">
-        <nav class="navbar">
-            <a href="./" class="nav-logo">TEXINDIENNE</a>
-            <ul class="nav-menu">
-                <li class="nav-item">
-                    <div class="nav-link-drop">WHO WE ARE</div>
-                    <ul class="drop-down"> 
-                        <li> <a href="./Strategy.html" class="nav-sub-link"> OUR STRATEGY </a> </li>
-                        <li> <a href="./Values.html" class="nav-sub-link"> VALUES </a> </li>
+        <div class="nav-container">
+            <div class="nav-main">
+                <div class="nav-logo">
+                    <a href="./">TEXINDIENNE</a>
+                </div>
+                <div class="nav-open-menu">
+                    <span></span>
+                </div>
+                <div class="menu-overlay">
+                </div>
+                <!-- navigation menu start -->
+                <nav class="nav-menu">
+                    <div class="close-nav-menu">
+                        <i class="fa-solid fa-x"></i>
+                    </div>
+                    <ul class="menu">
+                        <li class="menu-item menu-item-has-children">
+                            <a href="#" data-toggle="sub-menu">WHO WE ARE <i class="plus"></i></a>
+                            <ul class="sub-menu">
+                                <li class="menu-item"><a href="#">OUR STRATEGY</a></li>
+                                <li class="menu-item"><a href="#">OUR VALUES</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">COLLECTION</a>
+                        </li>
+                        <li class="menu-item menu-item-has-children">
+                            <a href="#" data-toggle="sub-menu">CAREERS <i class="plus"></i></a>
+                            <ul class="sub-menu">
+                                <li class="menu-item"><a href="#">LIFE AT TI</a></li>
+                                <li class="menu-item"><a href="#">JOIN US</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">LEADERSHIP</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">CONNECT</a>
+                        </li>
                     </ul>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">COLLECTION</a>
-                </li>
-                <li class="nav-item"> 
-                    <div class="nav-link-drop">CAREERS</div>
-                    <ul class="drop-down"> 
-                        <li> <a href="./LifeatTi.html" class="nav-sub-link"> LIFE AT TI </a> </li>
-                        <li> <a href="#" class="nav-sub-link"> JOIN US </a> </li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a href="./Leadership.html" class="nav-link">LEADERSHIP</a>
-                </li>
-                <li class="nav-item">
-                    <a href="./Connect.html" class="nav-link">CONNECT</a>
-                </li>
-            </ul>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+                </nav>
+                <!-- navigation menu end -->
             </div>
-        </nav>
+        </div>
     </header>
 
     <div class="main-container">

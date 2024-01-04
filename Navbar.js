@@ -1,34 +1,90 @@
-//     --primary: #FAF8F5;
-//     --secondary: #3E4045;
-//     --highlightB: #896B60;
-//     --highlightG: #848A67;
-
-function disableScroll() {
-    document.body.style.overflow = 'hidden';
-}
-
-function enableScroll() {
-    document.body.style.overflow = ''; // Reset to default value
-}
-
 window.addEventListener("load", () => {
-    disableScroll();
+    document.body.style.overflow = 'hidden';
     const loader = document.querySelector(".loader");
 
     loader.classList.add("loader--hidden");
 
     if (document.body.contains(loader)) {
         document.body.removeChild(loader);
-        enableScroll();
+        document.body.style.overflow = '';
     }
-
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-    const navbar = document.querySelector(".navbar");
-    const navMenu = document.querySelector(".nav-menu");
-    const hamburger = document.querySelector(".hamburger");
-    const navLinks = document.querySelectorAll(".nav-link");
+
+    const openNavMenu = document.querySelector(".nav-open-menu"),
+        closeNavMenu = document.querySelector(".close-nav-menu"),
+        navMenu = document.querySelector(".nav-menu"),
+        menuOverlay = document.querySelector(".menu-overlay"),
+        navbar = document.querySelector(".header"),
+        mediaSize = 991;
+
+    openNavMenu.addEventListener("click", toggleNav);
+    closeNavMenu.addEventListener("click", toggleNav);
+    // close the navMenu by clicking outside
+    menuOverlay.addEventListener("click", toggleNav);
+
+    function toggleNav() {
+        navMenu.classList.toggle("open");
+        menuOverlay.classList.toggle("active");
+        
+        if (navMenu.classList.contains("open")) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = '';
+        } 
+
+    }
+
+    navMenu.addEventListener("click", (event) => {
+        if (event.target.hasAttribute("data-toggle") &&
+            window.innerWidth <= mediaSize) {
+            // prevent default anchor click behavior
+            event.preventDefault();
+            const menuItemHasChildren = event.target.parentElement;
+            // if menuItemHasChildren is already expanded, collapse it
+            if (menuItemHasChildren.classList.contains("active")) {
+                collapseSubMenu();
+            }
+            else {
+                // collapse existing expanded menuItemHasChildren
+                if (navMenu.querySelector(".menu-item-has-children.active")) {
+                    collapseSubMenu();
+                }
+                // expand new menuItemHasChildren
+                menuItemHasChildren.classList.add("active");
+                const subMenu = menuItemHasChildren.querySelector(".sub-menu");
+                subMenu.style.maxHeight = subMenu.scrollHeight + "px";
+            }
+        }
+    });
+
+    window.addEventListener("resize", function () {
+        if (this.innerWidth > mediaSize) {
+            resizeFix();
+        }
+    });
+
+    // Event listener for scroll
+    window.addEventListener("scroll", handleScroll);
+
+    function collapseSubMenu() {
+        navMenu.querySelector(".menu-item-has-children.active .sub-menu")
+            .removeAttribute("style");
+        navMenu.querySelector(".menu-item-has-children.active")
+            .classList.remove("active");
+    }
+
+    function resizeFix() {
+        // if navMenu is open ,close it
+        if (navMenu.classList.contains("open")) {
+            toggleNav();
+        }
+        // if menuItemHasChildren is expanded , collapse it
+        if (navMenu.querySelector(".menu-item-has-children.active")) {
+            collapseSubMenu();
+        }
+    }
 
     // Function to handle scrolling
     function handleScroll() {
@@ -41,32 +97,6 @@ document.addEventListener("DOMContentLoaded", function () {
             navbar.classList.remove("scrolled");
         }
     }
-
-    // Event listener for scroll
-    window.addEventListener("scroll", handleScroll);
-
-    // Rest of your menu toggle logic
-    hamburger.addEventListener("click", mobileMenu);
-
-    function mobileMenu() {
-        hamburger.classList.toggle("active");
-        navMenu.classList.toggle("active");
-        if (navMenu.classList.contains("active")) {
-            navbar.classList.add("scrolled");
-            disableScroll();
-        } else {
-            enableScroll();
-        } 
-        if (window.scrollY < 50 && !(navMenu.classList.contains("active"))) {
-            navbar.classList.remove("scrolled");
-        }
-    }
-
-    navLinks.forEach(n => n.addEventListener("click", closeMenu));
-
-    function closeMenu() {
-        hamburger.classList.remove("active");
-        navMenu.classList.remove("active");
-        navbar.classList.remove("scrolled");
-    }
 });
+
+
