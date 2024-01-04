@@ -51,24 +51,19 @@ a {
 .nav-main {
     background-color: transparent;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; 
     align-items: center;
     padding: 15px;
     border-radius: 40px;
 }
 
 .nav-logo {
-    height: 30px;
-    padding: 0 15px;
-    align-items: center;
-    justify-content: center;
-}
-
-.nav-logo a {
     color: var(--primary);
     font-size: 30px;
     font-family: Perpetua Titling MT;
     font-weight: 200;
+    padding: 0 15px;
+    height: 30px;
 }
 
 .nav-menu {
@@ -174,7 +169,7 @@ a {
 }
 
 .nav-open-menu {
-    height: 34px;
+    height: 30px;
     width: 40px;
     margin-right: 15px;
     display: none;
@@ -332,7 +327,7 @@ a {
     background-color: var(--primary);
 }
 
-.header.scrolled .nav-logo a {
+.header.scrolled .nav-logo {
     color: var(--secondary);
 }
 
