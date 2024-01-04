@@ -234,6 +234,10 @@ a {
     transition: all 0.3s ease;
 }
 
+.nav-icons-mobile {
+    display: none;
+}
+
 /* responsive */
 
 @media(max-width: 1040px) {
@@ -316,6 +320,22 @@ a {
     .close-nav-menu,
     .nav-open-menu {
         display: flex;
+    }
+
+    .nav-icons-mobile {
+        display: flex;
+        padding: 10px;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav-social-img {
+        height: 26px;
+    }
+    
+    .nav-social-img:hover {
+        opacity: 0.8;
     }
 }
 
