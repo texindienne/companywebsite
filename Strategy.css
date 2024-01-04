@@ -98,8 +98,8 @@
 }
 
 .pillar-image-container {
-    max-width: 250px;
-    border-radius: 70px;
+    max-width: 200px;
+    border-radius: 20%;
     padding: 40px;
     background-color: #737e8b;
     align-items: center;
@@ -176,8 +176,8 @@
 
 /* Styles for sustainability approach titles */
 .pillar-circle {
-    max-width: 250px;
-    border-radius: 70px;
+    max-width: 200px;
+    border-radius: 40px;
     padding: 40px;
     background: #848A67;
     border-radius: 9999px;
@@ -305,7 +305,7 @@
 
     .pillar-image-container {
         max-width: 150px;
-        border-radius: 40px;
+        border-radius: 50%;
         padding: 30px;
     }
 

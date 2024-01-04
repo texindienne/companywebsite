@@ -1,0 +1,48 @@
+:root {
+    --primary: #FAF8F5;
+    --secondary: #3E4045;
+    --highlightB: #896B60;
+    --highlightG: #798760;
+}
+
+/* Main container styles */
+.main-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--secondary);
+}
+
+/* Artistry text styles */
+.artistry-text {
+    top: calc(50% - 40px);
+    width: 60%;
+    position: absolute;
+    left: 20%;
+    text-align: center;
+    color: #FAF7F5;
+    font-size: 96px;
+    font-style: italic;
+    font-weight: 500;
+}
+
+
+@media screen and (max-width: 1024px) {}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    /* Artistry text styles */
+    .artistry-text {
+        font-size: 72px;
+    }
+}
+
+/* Small devices such as large phones (640px and up) */
+@media screen and (max-width: 540px) {
+    /* Artistry text styles */
+    .artistry-text {
+        font-size: 56px;
+    }
+}

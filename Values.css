@@ -89,8 +89,8 @@
 }
 
 .core-values-image-container {
-    max-width: 250px;
-    border-radius: 70px;
+    max-width: 200px;
+    border-radius: 40px;
     padding: 40px;
     background-color: #737e8b;
     align-items: center;
@@ -144,8 +144,8 @@
 }
 
 .circle {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     background-color: var(--highlightB);
     border-radius: 9999px;
     align-items: center;
@@ -247,7 +247,7 @@
     .core-values-image-container {
         max-width: 150px;
         padding: 30px;
-        border-radius: 50px;
+        border-radius: 50%;
     }
     
     
