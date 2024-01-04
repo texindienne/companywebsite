@@ -130,7 +130,7 @@
                 <div class="right-side">
                     <div class="topic-text">Send us a message</div>
                     <p>Connecting Through Fabric, Crafting Relationships</p>
-                    <form action="https://formsubmit.io/send/721abaab-44e3-42d4-8e11-3114b07dc9c3" method="POST">
+                    <form id="myForm" action="https://formsubmit.io/send/721abaab-44e3-42d4-8e11-3114b07dc9c3" method="POST">
                         <input name="_redirect" type="hidden" id="name" value="https://www.texindienne.com">
                         <div class="input-box">
                             <input name="name" type="text" placeholder="Enter your name" required>
@@ -146,6 +146,17 @@
                             <input type="submit" value="Submit">
                         </div>
                     </form>
+                    <script>
+                        document.getElementById("myForm").addEventListener("submit", function(event) {
+                            event.preventDefault(); // Prevent the form from submitting immediately
+                    
+                            // Show an alert when the form submission is successful
+                            alert("Message sent successfully!");
+
+                            // Then submit the form after the alert
+                            this.submit();
+                        });
+                    </script>
                 </div>
             </div>
     </div>
