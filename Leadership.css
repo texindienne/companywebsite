@@ -63,7 +63,7 @@
 
 .team {
     display: grid;
-    grid-template-columns: repeat(3, max-content);
+    grid-template-columns: repeat(1, max-content);
     gap: 50px;
     align-items: center;
     justify-content: center;
