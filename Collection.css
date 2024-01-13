@@ -1,8 +1,9 @@
 :root {
-    --primary: #FAF8F5;
-    --secondary: #3E4045;
-    --highlightB: #896B60;
-    --highlightG: #798760;
+    --kncprimary: #F5F5F5;
+    --kncprimary2: #F0ECE2;
+    --kncsecondary: #4F4847;
+    --knchighlightR: #5D1314;
+    --knchighlightT: #BAB5AF;
 }
 
 /* Main container styles */
@@ -10,39 +11,204 @@
     position: relative;
     width: 100vw;
     height: 100vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: var(--secondary);
+    background-color: var(--kncsecondary);
 }
 
 /* Artistry text styles */
-.artistry-text {
-    top: calc(50% - 40px);
-    width: 60%;
+.artistry-img {
     position: absolute;
-    left: 20%;
-    text-align: center;
-    color: #FAF7F5;
-    font-size: 96px;
-    font-style: italic;
-    font-weight: 500;
+    width: 300px;
+    left: calc(50% - 150px);
+    top: calc(50% - 115px);
+}
+
+#background-video {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0; /* This is added to position the video behind other content */
+    background-color: var(--kncsecondary); /* Fallback color if the video doesn't load */
+    mix-blend-mode: luminosity;
+    opacity: 0.4;
+}
+
+/* Styles for the container */
+.container {
+    width: 100%;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background: var(--kncprimary2);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+}
+
+.light1 {
+    background-color: var(--kncprimary);
+}
+
+.light2 {
+    background-color: var(--kncprimary2);
+}
+
+.dark1 {
+    background-color: var(--kncsecondary);
+}
+
+.light {
+    color: var(--kncprimary);
+}
+
+.dark {
+    color: var(--kncsecondary);
 }
 
 
-@media screen and (max-width: 1024px) {}
+/* Title */
+.section-title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+/* Content styles */
+.content {
+    max-width: 1000px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    word-wrap: break-word;
+    line-height: 1.6;
+    padding: 30px;
+}
+
+.cta {
+    max-width: 500px;
+    padding: 30px;
+    margin-top: 30px;
+    background: var(--knchighlightT);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    display: flex;
+}
+
+/* CTA title styles */
+.cta-title {
+    align-self: stretch;
+    text-align: center;
+    color: #FAF8F5;
+    font-size: 32px;
+    font-weight: 600;
+    word-wrap: break-word;
+}
+
+/* CTA description styles */
+.cta-description {
+    align-self: stretch;
+    text-align: center;
+    color: #FAF8F5;
+    font-size: 18px;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.learn-more {
+    width: max-content;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    color: var(--primary);
+}
+
+.learn-more:after {
+    content: '';
+    position: max-content;
+    margin: 1px 0;
+    height: 1px;
+    width: 0%;
+    background-color: var(--primary);
+    display: block;
+    transition: all 0.3s;
+    left: 0;
+}
+
+.learn-more:hover:after {
+    width: 100%;
+}
+
+.designs {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.designimg {
+    padding: 30px 15px 0px 15px;
+    max-width: 400px;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .designimg {
+        max-width: 300px;
+    }
+}
 
 /* Media query for smaller screens */
 @media screen and (max-width: 768px) {
     /* Artistry text styles */
-    .artistry-text {
-        font-size: 72px;
+    .artistry-img {
+        width: 200px;
+        left: calc(50% - 100px);
+        top: calc(50% - 80px);
     }
+
+    .container {
+        padding: 50px 0;
+    }
+
+    /* section title */
+    .section-title {
+        font-size: 30px;
+    }
+
+    .content {
+        font-size: 16px;
+    }
+
+    .cta {
+        max-width: 80%;
+        margin: 0;
+        gap: 10px;
+    }
+
+    .cta-title {
+        font-size: 26px;
+    }
+
+    .cta-description {
+        font-size: 16px;
+    }
+
+    .learn-more {
+        font-size: 16px;
+        border-bottom: 1px var(--kncprimary) solid;
+    }
+
+    .learn-more:after {
+        display: none;
+    }
+
 }
 
 /* Small devices such as large phones (640px and up) */
 @media screen and (max-width: 540px) {
-    /* Artistry text styles */
-    .artistry-text {
-        font-size: 56px;
-    }
+
 }
