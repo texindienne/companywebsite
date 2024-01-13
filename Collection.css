@@ -102,7 +102,7 @@
 .cta-title {
     align-self: stretch;
     text-align: center;
-    color: #FAF8F5;
+    color: var(--kncsecondary);
     font-size: 32px;
     font-weight: 600;
     word-wrap: break-word;
@@ -112,7 +112,7 @@
 .cta-description {
     align-self: stretch;
     text-align: center;
-    color: #FAF8F5;
+    color: var(--kncsecondary);
     font-size: 18px;
     font-weight: 400;
     word-wrap: break-word;
@@ -123,7 +123,7 @@
     font-size: 18px;
     font-weight: 500;
     text-align: center;
-    color: var(--primary);
+    color: var(--kncsecondary);
 }
 
 .learn-more:after {
@@ -132,7 +132,7 @@
     margin: 1px 0;
     height: 1px;
     width: 0%;
-    background-color: var(--primary);
+    background-color: var(--kncsecondary);
     display: block;
     transition: all 0.3s;
     left: 0;
@@ -199,7 +199,7 @@
 
     .learn-more {
         font-size: 16px;
-        border-bottom: 1px var(--kncprimary) solid;
+        border-bottom: 1px var(--kncsecondary) solid;
     }
 
     .learn-more:after {
