@@ -315,6 +315,10 @@ body {
         font-size: 30px;
     }
 
+    .content {
+        font-size: 16px;
+    }
+
     /* Service title */
     .service-title {
         font-size: 18px;
