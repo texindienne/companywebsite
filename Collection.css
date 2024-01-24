@@ -17,9 +17,9 @@
 /* Artistry text styles */
 .artistry-img {
     position: absolute;
-    width: 300px;
-    left: calc(50% - 150px);
-    top: calc(50% - 130px);
+    width: 400px;
+    left: calc(50% - 200px);
+    top: calc(50% - 37.5px);
 }
 
 #background-video {
@@ -167,7 +167,7 @@
     .artistry-img {
         width: 200px;
         left: calc(50% - 100px);
-        top: calc(50% - 90px);
+        top: calc(50% - 25px);
     }
 
     .container {
