@@ -45,6 +45,7 @@
     justify-content: center;
     align-items: center;
     display: inline-flex;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .light1 {
@@ -72,7 +73,8 @@
 .section-title {
     text-align: center;
     font-size: 32px;
-    font-weight: 600;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* Content styles */
@@ -81,9 +83,15 @@
     text-align: center;
     font-size: 18px;
     font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
     word-wrap: break-word;
     line-height: 1.6;
     padding: 30px;
+}
+
+b {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
 }
 
 .cta {
@@ -103,8 +111,9 @@
     align-self: stretch;
     text-align: center;
     color: var(--kncsecondary);
-    font-size: 32px;
-    font-weight: 600;
+    font-size: 26px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
     word-wrap: break-word;
 }
 
@@ -114,6 +123,7 @@
     text-align: center;
     color: var(--kncsecondary);
     font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     word-wrap: break-word;
 }
@@ -121,7 +131,8 @@
 .learn-more {
     width: max-content;
     font-size: 18px;
-    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
     text-align: center;
     color: var(--kncsecondary);
 }
@@ -190,7 +201,7 @@
     }
 
     .cta-title {
-        font-size: 26px;
+        font-size: 22px;
     }
 
     .cta-description {
