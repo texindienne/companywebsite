@@ -1,0 +1,31 @@
+:root {
+    --kncprimary1: #FAF8F5;
+    --kncprimary2: #092030;
+    --kncsecondary: #CDCDC2;
+    --knchighlightG: #D1A250;
+}
+
+/* Main container styles */
+.main-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--kncprimary2);
+}
+
+@media screen and (max-width: 1024px) {
+
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 50px 0;
+    }
+
+}
+
+/* Small devices such as large phones (640px and up) */
+@media screen and (max-width: 540px) {
+
+}
