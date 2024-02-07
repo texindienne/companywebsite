@@ -1,8 +1,8 @@
 :root {
-    --kncprimary1: #FAF8F5;
-    --kncprimary2: #092030;
+    --kncprimary1: #FBF9EC;
+    --kncprimary2: #282828;
     --kncsecondary: #CDCDC2;
-    --knchighlightG: #D1A250;
+    --knchighlightG: #CCA159;
 }
 
 /* Main container styles */
@@ -13,16 +13,108 @@
     background-color: var(--kncprimary2);
 }
 
-@media screen and (max-width: 1024px) {
+.container {
+    padding: 150px 70px 70px 70px;
+    gap: 50px;
+    display: flex;
+    background-color: var(--kncprimary2);
+    color: var(--kncprimary1);
+}
 
+.image-container {
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.color-options {
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.color-label {
+    width: fit-content;
+    font-size: 18px;
+    font-weight: 500;
+    word-wrap: break-word;
+}
+
+.color {
+    width: 50px;
+    height: 50px;
+    border-radius: 9999px;
+}
+
+.product-image {
+    width: 500px;
+    height: 500px;
+}
+
+.info-container {
+    display: flex;
+    height: max-content;
+}
+
+.product-details {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 15px;
+    display: inline-flex;
+}
+
+.product-title {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.product-sub-title {
+    font-size: 18px;
+    font-weight: 600;
+    word-wrap: break-word;
+}
+
+.product-description {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.product-email {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.contact-section {
+    position: relative;
+    bottom: 0px;
+    display: flex;
+
+}
+
+
+@media screen and (max-width: 1024px) {
+    .container {
+        padding: 140px 0;
+    }
 }
 
 /* Media query for smaller screens */
 @media screen and (max-width: 768px) {
-    .container {
-        padding: 50px 0;
-    }
-
+    
 }
 
 /* Small devices such as large phones (640px and up) */
