@@ -1,8 +1,8 @@
 :root {
     --tissomiprimary: #F2F1EB;
-    --tissomiprimary2: #FBF9EC;
+    --tissomiprimaryweb: #FBF9EC;
     --tissomisecondary: #343434;
-    --tissomisecondary2: #282828;
+    --tissomisecondaryweb: #282828;
     --tissomihighlightG: #CCA159;
 }
 
@@ -11,15 +11,15 @@
     position: relative;
     width: 100vw;
     height: 100vh;
-    background-color: var(--tissomisecondary);
+    background-color: var(--tissomisecondaryweb);
 }
 
 /* Artistry text styles */
 .artistry-img {
     position: absolute;
-    width: 400px;
-    left: calc(50% - 200px);
-    top: calc(50% - 37.5px);
+    width: 600px;
+    left: calc(50% - 300px);
+    top: calc(50% - 96px);
 }
 
 #background-video {
@@ -30,7 +30,7 @@
     height: 100%;
     object-fit: cover;
     z-index: 0; /* This is added to position the video behind other content */
-    background-color: var(--tissomisecondary); /* Fallback color if the video doesn't load */
+    background-color: var(--tissomisecondaryweb); /* Fallback color if the video doesn't load */
     mix-blend-mode: luminosity;
     opacity: 0.4;
 }
@@ -40,7 +40,7 @@
     width: 100%;
     padding-top: 70px;
     padding-bottom: 70px;
-    background: var(--tissomiprimary2);
+    background: var(--tissomiprimary);
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -48,15 +48,11 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-.light1 {
+.lightback {
     background-color: var(--tissomiprimary);
 }
 
-.light2 {
-    background-color: var(--tissomiprimary2);
-}
-
-.dark1 {
+.darkback {
     background-color: var(--tissomisecondary);
 }
 
@@ -66,6 +62,10 @@
 
 .dark {
     color: var(--tissomisecondary);
+}
+
+.gold {
+    color: var(--tissomihighlightG);
 }
 
 
@@ -98,7 +98,7 @@ b {
     max-width: 500px;
     padding: 30px;
     margin-top: 30px;
-    background: var(--tissomisecondary2);
+    background: var(--tissomisecondaryweb);
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -110,7 +110,7 @@ b {
 .cta-title {
     align-self: stretch;
     text-align: center;
-    color: var(--tissomihighlightG);
+    color: var(--tissomiprimaryweb);
     font-size: 26px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
@@ -121,7 +121,7 @@ b {
 .cta-description {
     align-self: stretch;
     text-align: center;
-    color: var(--tissomiprimary2);
+    color: var(--tissomiprimaryweb);
     font-size: 18px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
@@ -134,7 +134,7 @@ b {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     text-align: center;
-    color: var(--tissomiprimary2);
+    color: var(--tissomihighlightG);
 }
 
 .learn-more:after {
@@ -143,7 +143,7 @@ b {
     margin: 1px 0;
     height: 1px;
     width: 0%;
-    background-color: var(--tissomiprimary2);
+    background-color: var(--tissomiprimaryweb);
     display: block;
     transition: all 0.3s;
     left: 0;
@@ -176,9 +176,9 @@ b {
 @media screen and (max-width: 768px) {
     /* Artistry text styles */
     .artistry-img {
-        width: 200px;
-        left: calc(50% - 100px);
-        top: calc(50% - 25px);
+        width: 300px;
+        left: calc(50% - 150px);
+        top: calc(50% - 49px);
     }
 
     .container {
@@ -210,7 +210,7 @@ b {
 
     .learn-more {
         font-size: 16px;
-        border-bottom: 1px var(--tissomiprimary2) solid;
+        border-bottom: 1px var(--tissomiprimaryweb) solid;
     }
 
     .learn-more:after {
