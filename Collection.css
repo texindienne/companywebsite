@@ -1,9 +1,9 @@
 :root {
-    --kncprimary: #F2F1EB;
-    --kncprimary2: #FBF9EC;
-    --kncsecondary: #343434;
-    --knchighlightR: #5D1314;
-    --knchighlightT: #BAB5AF;
+    --tissomiprimary: #F2F1EB;
+    --tissomiprimary2: #FBF9EC;
+    --tissomisecondary: #343434;
+    --tissomisecondary2: #282828;
+    --tissomihighlightG: #CCA159;
 }
 
 /* Main container styles */
@@ -11,7 +11,7 @@
     position: relative;
     width: 100vw;
     height: 100vh;
-    background-color: var(--kncsecondary);
+    background-color: var(--tissomisecondary);
 }
 
 /* Artistry text styles */
@@ -30,7 +30,7 @@
     height: 100%;
     object-fit: cover;
     z-index: 0; /* This is added to position the video behind other content */
-    background-color: var(--kncsecondary); /* Fallback color if the video doesn't load */
+    background-color: var(--tissomisecondary); /* Fallback color if the video doesn't load */
     mix-blend-mode: luminosity;
     opacity: 0.4;
 }
@@ -40,7 +40,7 @@
     width: 100%;
     padding-top: 70px;
     padding-bottom: 70px;
-    background: var(--kncprimary2);
+    background: var(--tissomiprimary2);
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -49,23 +49,23 @@
 }
 
 .light1 {
-    background-color: var(--kncprimary);
+    background-color: var(--tissomiprimary);
 }
 
 .light2 {
-    background-color: var(--kncprimary2);
+    background-color: var(--tissomiprimary2);
 }
 
 .dark1 {
-    background-color: var(--kncsecondary);
+    background-color: var(--tissomisecondary);
 }
 
 .light {
-    color: var(--kncprimary);
+    color: var(--tissomiprimary);
 }
 
 .dark {
-    color: var(--kncsecondary);
+    color: var(--tissomisecondary);
 }
 
 
@@ -98,7 +98,7 @@ b {
     max-width: 500px;
     padding: 30px;
     margin-top: 30px;
-    background: var(--knchighlightT);
+    background: var(--tissomisecondary2);
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -110,7 +110,7 @@ b {
 .cta-title {
     align-self: stretch;
     text-align: center;
-    color: var(--kncsecondary);
+    color: var(--tissomihighlightG);
     font-size: 26px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
@@ -121,7 +121,7 @@ b {
 .cta-description {
     align-self: stretch;
     text-align: center;
-    color: var(--kncsecondary);
+    color: var(--tissomiprimary2);
     font-size: 18px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
@@ -134,7 +134,7 @@ b {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     text-align: center;
-    color: var(--kncsecondary);
+    color: var(--tissomiprimary2);
 }
 
 .learn-more:after {
@@ -143,7 +143,7 @@ b {
     margin: 1px 0;
     height: 1px;
     width: 0%;
-    background-color: var(--kncsecondary);
+    background-color: var(--tissomiprimary2);
     display: block;
     transition: all 0.3s;
     left: 0;
@@ -210,7 +210,7 @@ b {
 
     .learn-more {
         font-size: 16px;
-        border-bottom: 1px var(--kncsecondary) solid;
+        border-bottom: 1px var(--tissomiprimary2) solid;
     }
 
     .learn-more:after {
