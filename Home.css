@@ -244,7 +244,6 @@ body {
     height: 200px;
     top: 0;
     left: 0;
-    mix-blend-mode: luminosity;
 }
 
 .news-title {
