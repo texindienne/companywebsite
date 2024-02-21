@@ -15,12 +15,27 @@
     padding: 30px;
 }
 
+.footer-head {
+    gap: 5px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
 .footerlogo {
-    width: 233px;
     color: #3E4045;
     font-size: 30px;
     font-weight: 500;
     word-wrap: break-word;
+}
+
+.GST {
+    color: #3E4045;
+    font-size: 18px;
+    font-weight: 500;
+    word-wrap: break-word;
+    text-align: center;
+    font-family: 'Garamond';
 }
 
 .footer-info-container {
@@ -136,10 +151,17 @@
         gap: 0;
     }
 
+    .footer-head {
+        margin-bottom: 15px;
+    }
+
     .footerlogo {
         font-size: 30px;
-        margin-bottom: 15px;
         width: fit-content;
+    }
+
+    .GST {
+        font-size: 16px;
     }
 
     .footer-info-container {
