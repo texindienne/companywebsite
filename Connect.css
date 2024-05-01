@@ -10,7 +10,7 @@
   position: relative;
   width: 100vw;
   height: 100vh;
-  background-image: url(./Images/Media/Media.png);
+  background-image: url(./Images/Media/Media.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-color: var(--primary);
