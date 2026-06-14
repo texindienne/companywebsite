@@ -53,6 +53,42 @@
   word-wrap: break-word;
 }
 
+/* Founder message styles */
+.founder-message {
+    max-width: 1000px;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    display: inline-flex;
+}
+
+/* Founder image styles */
+.founder-img {
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 200px;
+}
+
+/* Founder quote styles */
+.founder-quote {
+    flex: 1 1 0;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 15px;
+    display: inline-flex;
+}
+
+/* Founder message styles */
+.quote {
+    align-self: stretch;
+    color: #3E4045;
+    font-size: 20px;
+    font-weight: 500;
+    font-style: italic;
+    word-wrap: break-word;
+}
+
 .blog {
   display: flex;
   justify-content: center;
@@ -315,6 +351,16 @@
   /* Title styles */
   .title {
     font-size: 30px;
+  }
+
+  /* Founder message styles */
+  .founder-message {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .quote {
+    font-size: 18px;
   }
 
   .content {

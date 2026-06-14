@@ -69,6 +69,49 @@
     justify-content: center;
 }
 
+/* Distribution table styles */
+.distribution-table-wrapper {
+    width: 100%;
+    max-width: 1000px;
+    overflow-x: auto;
+}
+ 
+.distribution-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 18px;
+    color: #3E4045;
+    margin-bottom: 20px;
+}
+ 
+.distribution-table thead {
+    background-color: var(--secondary);
+}
+ 
+.distribution-table thead th {
+    color: var(--primary);
+    text-align: left;
+    padding: 15px 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+}
+ 
+.distribution-table tbody td {
+    padding: 15px 20px;
+    border-bottom: 1px solid #e0ddd6;
+    font-weight: 500;
+}
+ 
+.distribution-table tbody tr:nth-child(even) {
+    background-color: #f5f3ee;
+}
+ 
+.distribution-table tbody tr:hover {
+    background-color: #ece8e0;
+}
+
 /* Team member styles */
 .team-member {
     flex-direction: column;
@@ -119,8 +162,8 @@
 
 /* Founder image styles */
 .founder-img {
-    max-width: 400px;
-    max-height: 400px;
+    max-width: 300px;
+    max-height: 300px;
     border-radius: 200px;
 }
 
@@ -138,7 +181,7 @@
 .quote {
     align-self: stretch;
     color: #3E4045;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 500;
     font-style: italic;
     word-wrap: break-word;
@@ -250,7 +293,7 @@
     }
 
     .quote {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .cta {

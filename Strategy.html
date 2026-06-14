@@ -13,75 +13,17 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
         rel="stylesheet">
-    <title>Strategy | TexIndienne</title>
+    <title>Strategy | Tissomi</title>
 </head>
 <script src="./Navbar.js"></script>
+<script src="./Footer.js"></script>
 
 <body>
     <div class="loader">
         <img src="./Images/TI.png" class="logoani">
     </div>
 
-    <header class="header">
-        <div class="nav-container">
-            <div class="nav-main">
-                <a href="./" class="nav-logo">TEXINDIENNE</a>
-                <div class="nav-open-menu">
-                    <span></span>
-                </div>
-                <div class="menu-overlay">
-                </div>
-                <!-- navigation menu start -->
-                <nav class="nav-menu">
-                    <div class="close-nav-menu">
-                        <i class="fa-solid fa-x"></i>
-                    </div>
-                    <ul class="menu">
-                        <li class="menu-item menu-item-has-children">
-                            <a data-toggle="sub-menu">WHO WE ARE<i class="plus"></i></a>
-                            <ul class="sub-menu">
-                                <li class="menu-item"><a href="./Strategy">OUR STRATEGY</a></li>
-                                <li class="menu-item"><a href="./Values">OUR VALUES</a></li>
-                            </ul>
-                        </li>
-                        <li class="menu-item">
-                            <a href="./Collection">COLLECTION</a>
-                        </li>
-                        <li class="menu-item menu-item-has-children">
-                            <a data-toggle="sub-menu">CAREERS<i class="plus"></i></a>
-                            <ul class="sub-menu">
-                                <li class="menu-item"><a href="./LifeatTi">LIFE AT TI</a></li>
-                                <li class="menu-item">
-                                    <a href="https://www.linkedin.com/company/texindienne" target="_blank">
-                                        JOIN US
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="menu-item">
-                            <a href="./Leadership">LEADERSHIP</a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="./Connect">CONNECT</a>
-                        </li>
-                    </ul>
-                    <div class="nav-icons-mobile">
-                        <a href="https://wa.me/+918591392454" target="_blank">
-                            <img class="nav-social-img" src="./Images/Footer/whatsapp.png" alt="Social Icon 3" />
-                        </a>
-                        <a href="https://www.instagram.com/texindienne/" target="_blank">
-                            <img class="nav-social-img" src="./Images/Footer/instagram.png" alt="Social Icon 1" />
-                        </a>
-                        <a href="https://www.linkedin.com/company/texindienne" target="_blank">
-                            <img class="nav-social-img" src="./Images/Footer/linkedln.png" alt="Social Icon 2" />
-                        </a>
-                    </div>
-                    </div>
-                </nav>
-                <!-- navigation menu end -->
-            </div>
-        </div>
-    </header>
+    <div id="site-navbar"></div>
 
     <div class="main-container">
         <div class="artistry-text">Innovation in Every Weave.</div>
@@ -90,64 +32,64 @@
     <div class="container">
         <!-- Purpose Section -->
         <div class="core-values-heading">
-            <div class="title">Our Purpose</div>
+            <div class="title">What We Weave</div>
             <div class="text-content">
-                At TexIndienne, we are driven not to merely provide fabrics but to curate an unparalleled experience for
-                our partners in the garment manufacturing industry. Our brand purpose revolves around four core pillars
-                that define our essence:
+                Every fabric in our range is chosen with one goal in mind. The right quality, at the right price, 
+                for the modern womenswear manufacturer. From Lenzing certified fibres to Liva accredited yarns, 
+                every fabric we source meets a standard your customer can feel.
             </div>
         </div>
 
         <div class="pillar-section">
+             <!-- Compact Cotton -->
             <div class="pillar1">
                 <div class="pillar-details">
-                    <div class="pillar-title">Consultation and Understanding</div>
-                    <div class="pillar-description">We begin by deeply understanding your fabric needs through an
-                        in-depth consultation, immersing ourselves in your vision and business goals. This forms the
-                        foundation for a tailored fabric experience that transcends materials.</div>
+                    <div class="pillar-title">Cotton</div>
+                    <div class="pillar-description">Sourced from the finest cotton belts of Southern India, our compact 
+                        cotton is tightly spun for a smooth surface, superior strength, and a clean finish that holds 
+                        its shape wash after wash.</div>
                 </div>
                 <div class="pillar-image-container">
-                    <img class="pillar-image" src="./Images/Home/Purpose1.png" />
+                    <img class="pillar-image" src="./Images/Home/Yarn1.png" />
                 </div>
             </div>
-
-            <!-- Pillar 2 -->
+ 
+            <!-- Rayon & Viscose -->
             <div class="pillar2">
                 <div class="pillar-image-container">
-                    <img class="pillar-image" src="./Images/Home/Purpose2.png" />
+                    <img class="pillar-image" src="./Images/Home/Yarn2.png" />
                 </div>
                 <div class="pillar-details">
-                    <div class="pillar-title">Custom Fabric Selection</div>
-                    <div class="pillar-description">Fabric is not just a component; it is an extension of your brand's
-                        identity. We meticulously select fabrics to harmonize with your objectives, ensuring quality and
-                        durability. Each chosen fabric is a testament to our commitment to elevate your brand.</div>
+                    <div class="pillar-title">Viscose</div>
+                    <div class="pillar-description">Spun from Pallava grade yarn, our rayon and viscose fabrics offer 
+                        an exceptional softness and fluid drape, bringing effortless elegance to every womenswear 
+                        silhouette.</div>
                 </div>
             </div>
-
-            <!-- Pillar 3 -->
+ 
+            <!-- Lyocell & Modal -->
             <div class="pillar1">
                 <div class="pillar-details">
-                    <div class="pillar-title">Design and Personalization</div>
-                    <div class="pillar-description">We weave fabrics to resonate with your brand's unique character,
-                        involving a fusion of colors, patterns, and special finishes. This personal touch is at the core
-                        of our design and personalization mission — transforming fabrics into a canvas for your brand's
-                        narrative.</div>
+                    <div class="pillar-title">Lyocell</div>
+                    <div class="pillar-description">Made with Lenzing certified yarn, our lyocell and modal fabrics 
+                        deliver a silky hand feel, excellent moisture management, and a refined finish that is gentle 
+                        on the skin and the planet.</div>
                 </div>
                 <div class="pillar-image-container">
-                    <img class="pillar-image" src="./Images/Home/Purpose3.png" />
+                    <img class="pillar-image" src="./Images/Home/Yarn3.png" />
                 </div>
             </div>
-
-            <!-- Pillar 4 -->
+ 
+            <!-- Synthetic Weaves -->
             <div class="pillar2">
                 <div class="pillar-image-container">
-                    <img class="pillar-image" src="./Images/Home/Purpose4.png" />
+                    <img class="pillar-image" src="./Images/Home/Yarn4.png" />
                 </div>
                 <div class="pillar-details">
-                    <div class="pillar-title">Quality Production and Timely Delivery</div>
-                    <div class="pillar-description">Our commitment extends to meticulous production, ensuring timely
-                        delivery of bespoke creations. Each fabric embodies your brand's story, enriching your identity
-                        with unique character woven into every thread.</div>
+                    <div class="pillar-title">Synthetic Fibres</div>
+                    <div class="pillar-description">Engineered for both beauty and comfort. Our bio-washed synthetic 
+                        weaves are treated to sit softly against the skin, with a rich sheen that elevates 
+                        any garment.</div>
                 </div>
             </div>
         </div>
@@ -166,8 +108,10 @@
                 </div>
                 <div class="pillar-details">
                     <div class="pillar-title">Natural Fiber Selection</div>
-                    <div class="pillar-description">We use organic fibers like cotton and hemp, grown without
-                        chemicals, for eco-friendly and biodegradable fabrics.</div>
+                    <div class="pillar-description">We prioritize natural materials like premium cotton while 
+                        consciously minimizing our reliance on polyester, maintaining the natural integrity of 
+                        our collections.
+                    </div>
                 </div>
             </div>
 
@@ -178,8 +122,10 @@
                 </div>
                 <div class="pillar-details">
                     <div class="pillar-title">Transparent Supply Chain</div>
-                    <div class="pillar-description">We ensure ethical sourcing, collaborating with suppliers
-                        committed to sustainable practices.</div>
+                    <div class="pillar-description">We partner strictly with certified mills and ethical suppliers, 
+                        ensuring full visibility and accountability across every step of our sourcing 
+                        process.
+                    </div>
                 </div>
             </div>
 
@@ -189,9 +135,11 @@
                     <img src="./Images/WhoWeAre/eco-firndly.png"class="pillar-img" />
                 </div>
                 <div class="pillar-details">
-                    <div class="pillar-title">Use of Eco-Friendly Dyes</div>
-                    <div class="pillar-description">Our dyeing methods use plant-based or low-impact dyes,
-                        conserving water and minimizing harsh chemicals.</div>
+                    <div class="pillar-title">Responsible Processing</div>
+                    <div class="pillar-description">We work exclusively with leading process houses that utilize 
+                        low-impact methods to significantly reduce harmful chemicals and conserve water 
+                        during dyeing.
+                    </div>
                 </div>
             </div>
 
@@ -202,82 +150,16 @@
                 </div>
                 <div class="pillar-details">
                     <div class="pillar-title">Waste Reduction and Management</div>
-                    <div class="pillar-description">Our optimized processes minimize waste, recycling production
-                        leftovers to reduce our environmental impact.</div>
+                    <div class="pillar-description">Our manufacturing operations are designed for efficiency, 
+                        actively minimizing fabric wastage and offcuts to reduce our overall environmental 
+                        footprint.
+                    </div>
                 </div>
             </div>
         </div>
-        <a href="https://texindienne.wixsite.com/media" target="_blank" class="learn-more">Read More</a>
     </div>
 
-    <footer>
-        <div class="footer-container">
-            <div class="footer">
-                <div class="footer-head"> 
-                    <div class="footerlogo">TEXINDIENNE </div>
-                    <div class="GST">GST No: 27CBNPJ8017L1Z5</div>
-                </div>
-                <div class="footer-info-container">
-                    <div class="footer-heading-col hours-col">
-                        <div class="footer-heading">Hours</div>
-                        <div class="hours">
-                            <div class="days">
-                                <div class="day">Monday<br/>Tuesday<br/>Wednesday<br/>Thursday</div>
-                                <div class="time">10 am - 9 pm<br/>10 am - 9 pm<br/>10 am - 9 pm<br/>10 am - 9 pm</div>
-                            </div>
-                            <div class="days"> 
-                                <div class="day">Friday<br/>Saturday<br/>Sunday</div>
-                                <div class="time">10 am - 9 pm<br/>10 am - 9 pm<br/>10 am - 9 pm</div>
-                            </div>
-                        </div>    
-                    </div>
-                    <div class="footer-heading-col collection-col">
-                        <div class="footer-heading">Collections</div>
-                        <a href="./Collection" class="footer-collection">Tissomi</a>
-                    </div>
-                    <div class="footer-heading-col">
-                        <div class="footer-heading">Located at</div>
-                        <a href="https://maps.app.goo.gl/is2dXug5mt72gvUo8" 
-                            target="_blank" class="address">
-                            TexIndienne </br>
-                            306, Kalbadevi Road, </br>
-                            Mumbai 400002, </br>
-                            MH, India
-                        </a>
-                    </div>
-                    <div class="footer-heading-col reach-us-mob">
-                        <div class="footer-heading">Call us at</div>
-                        <a href="tel:+918591392454" class="phone">+91 8591392454</a>
-                        <div class="social-icons-mobile">
-                            <a href="https://wa.me/+918591392454" target="_blank">
-                                <img class="footer-social-img" src="./Images/Footer/whatsapp.png" alt="Social Icon 3" />
-                            </a>
-                            <a href="https://www.instagram.com/texindienne/" target="_blank">
-                                <img class="footer-social-img" src="./Images/Footer/instagram.png" alt="Social Icon 1" />
-                            </a>
-                            <a href="https://www.linkedin.com/company/texindienne" target="_blank">
-                                <img class="footer-social-img" src="./Images/Footer/linkedln.png" alt="Social Icon 2" />
-                            </a>
-                        </div>
-                    </div>
-                    <div class="footer-heading-col reach-us">
-                        <div class="footer-heading">Reach us at</div>
-                        <div class="social-icons">
-                            <a href="https://wa.me/+918591392454" target="_blank">
-                                <img class="footer-social-img" src="./Images/Footer/whatsapp.png" alt="Social Icon 3" />
-                            </a>
-                            <a href="https://www.instagram.com/texindienne/" target="_blank">
-                                <img class="footer-social-img" src="./Images/Footer/instagram.png" alt="Social Icon 1" />
-                            </a>
-                            <a href="https://www.linkedin.com/company/texindienne" target="_blank">
-                                <img class="footer-social-img" src="./Images/Footer/linkedln.png" alt="Social Icon 2" />
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>  
+    <div id="site-footer"></div> 
 </body>
 
 </html>

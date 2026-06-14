@@ -1,7 +1,7 @@
 :root {
     --primary: #FAF8F5;
     --secondary: #3E4045;
-    --highlightB: #896B60;
+    --highlightB: #BFA57A;
     --highlightG: #848A67;
 }
 
@@ -159,11 +159,35 @@ body {
     width: 100%;
 }
 
-.naturalfbrcImg {
-    height: 70vh;
-    background-image: url(./Images/Home/NaturalBack.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+.certifications-section {
+    width: 100%;
+    background-color: var(--secondary);
+    padding: 100px 90px;
+}
+
+.certifications-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.cert-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 150px;
+    border-radius: 8px;
+}
+
+.cert-logo {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
 }
 
 /* Content styles */
@@ -326,6 +350,20 @@ body {
     /* Service description */
     .service-description {
         font-size: 16px;
+    }
+
+    .certifications-section {
+        padding: 80px 50px;
+    }
+
+    .certifications-container {
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .cert-item {
+        width: 120px;
+        height: 80px;
     }
 
     .news-section {

@@ -13,75 +13,17 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
         rel="stylesheet">
-    <title>Life at TI | TexIndienne</title>
+    <title>Life at TI | Tissomi</title>
 </head>
 <script src="./Navbar.js"></script>
+<script src="./Footer.js"></script>
 
 <body>
     <div class="loader">
         <img src="./Images/TI.png" class="logoani">
     </div>
 
-    <header class="header">
-        <div class="nav-container">
-            <div class="nav-main">
-                <a href="./" class="nav-logo">TEXINDIENNE</a>
-                <div class="nav-open-menu">
-                    <span></span>
-                </div>
-                <div class="menu-overlay">
-                </div>
-                <!-- navigation menu start -->
-                <nav class="nav-menu">
-                    <div class="close-nav-menu">
-                        <i class="fa-solid fa-x"></i>
-                    </div>
-                    <ul class="menu">
-                        <li class="menu-item menu-item-has-children">
-                            <a data-toggle="sub-menu">WHO WE ARE<i class="plus"></i></a>
-                            <ul class="sub-menu">
-                                <li class="menu-item"><a href="./Strategy">OUR STRATEGY</a></li>
-                                <li class="menu-item"><a href="./Values">OUR VALUES</a></li>
-                            </ul>
-                        </li>
-                        <li class="menu-item">
-                            <a href="./Collection">COLLECTION</a>
-                        </li>
-                        <li class="menu-item menu-item-has-children">
-                            <a data-toggle="sub-menu">CAREERS<i class="plus"></i></a>
-                            <ul class="sub-menu">
-                                <li class="menu-item"><a href="./LifeatTi">LIFE AT TI</a></li>
-                                <li class="menu-item">
-                                    <a href="https://www.linkedin.com/company/texindienne" target="_blank">
-                                        JOIN US
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="menu-item">
-                            <a href="./Leadership">LEADERSHIP</a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="./Connect">CONNECT</a>
-                        </li>
-                    </ul>
-                    <div class="nav-icons-mobile">
-                        <a href="https://wa.me/+918591392454" target="_blank">
-                            <img class="nav-social-img" src="./Images/Footer/whatsapp.png" alt="Social Icon 3" />
-                        </a>
-                        <a href="https://www.instagram.com/texindienne/" target="_blank">
-                            <img class="nav-social-img" src="./Images/Footer/instagram.png" alt="Social Icon 1" />
-                        </a>
-                        <a href="https://www.linkedin.com/company/texindienne" target="_blank">
-                            <img class="nav-social-img" src="./Images/Footer/linkedln.png" alt="Social Icon 2" />
-                        </a>
-                    </div>
-                    </div>
-                </nav>
-                <!-- navigation menu end -->
-            </div>
-        </div>
-    </header>
+    <div id="site-navbar"></div>
 
     <div class="main-container">
         <div class="artistry-text">Weaving, Diversity, Innovation, and Belonging</div>
@@ -91,13 +33,14 @@
         <div class="title">Who We Are?</div>
         <div class="section-content">
             <div class="text-content">
-                <p>At TexIndienne, we intricately knit together a diverse and vibrant career tapestry, where each thread
-                    symbolizes a unique individual, contributing to the rich diversity that defines our workplace. Our
-                    dedication to Transparency, Reliability, and Innovation crafts an environment that not only
-                    celebrates individuality but also fosters a culture where every team member is encouraged to bring
-                    their authentic selves to work. Learn more about our purpose.</p>
+                <p>At TexIndienne, we are building a trusted fabric business for modern womenswear manufacturers, 
+                    with a clear focus on quality, transparency, and reliability. Our approach is practical, 
+                    thoughtful, and rooted in a deep understanding of what the industry needs. We believe 
+                    strong business relationships are built on consistency, honesty, and products that perform 
+                    well in real-world production. Every fabric we offer and every decision we make reflects 
+                    our commitment to delivering value that can be depended on.</p>
             </div>
-            <a href="./Strategy.html" class="learn-more2">Discover</a>
+            <a href="./Strategy" class="learn-more2">Discover</a>
         </div>
     </div>
 
@@ -108,41 +51,35 @@
         <div class="feature">
             <div class="feature-title">Growth and Development</div>
             <div class="feature-description">
-                Your growth is our priority. We offer continuous learning
-                opportunities, mentorship programs, and pathways for
-                advancement. Whether you're starting your career or seeking
-                new challenges, TexIndienne is committed to nurturing your
-                professional journey.
+                We believe in giving people room to grow through real responsibility, 
+                hands-on learning, and exposure to the textile business. Whether you 
+                are starting out or looking for your next challenge, TexIndienne offers 
+                an environment where you can build skills that matter and grow with 
+                the company.
             </div>
         </div>
         <div class="feature">
             <div class="feature-title">Reliability and Support</div>
             <div class="feature-description">
-                Joining TexIndienne means being part of a team built on
-                reliability and support. We take pride in our dedication to
-                delivering high-quality products and providing unwavering
-                support to our employees. Your career journey here is
-                backed by a foundation of trust and dependability.
+                At TexIndienne, reliability is not just something we expect from our products - it 
+                is also how we work together. We value a steady, supportive environment where people 
+                can depend on clear communication, practical guidance, and a team that follows through.
             </div>
         </div>
         <div class="feature">
             <div class="feature-title">Culture of Innovation</div>
             <div class="feature-description">
-                At TexIndienne, we foster a culture that champions
-                innovation at every level. From cutting-edge fabric designs
-                to pioneering sustainable practices, your ideas will find
-                fertile ground here. We encourage creativity and provide a
-                platform for your innovative spirit to flourish.
+                We believe in thoughtful innovation that improves quality, strengthens performance, 
+                and makes the business better. From fabric selection to how we solve problems, new 
+                ideas are welcome when they are practical, useful, and grounded in real industry needs.
             </div>
         </div>
         <div class="feature">
             <div class="feature-title">Commitment to Transparency</div>
             <div class="feature-description">
-                Our commitment to transparency extends to every aspect of
-                our organization. From clear communication channels to
-                inclusive decision-making processes, we prioritize openness.
-                At TexIndienne, you'll find a workplace where transparency
-                fuels trust and collaboration.
+                Transparency is central to how we operate. We believe in clear communication, 
+                honest expectations, and decisions that make sense for both the team and the 
+                business. That openness helps build trust, accountability, and better collaboration.
             </div>
         </div>
     </div>
@@ -199,74 +136,7 @@
         </div>
     </div>
 
-    <footer>
-        <div class="footer-container">
-            <div class="footer">
-                <div class="footer-head"> 
-                    <div class="footerlogo">TEXINDIENNE </div>
-                    <div class="GST">GST No: 27CBNPJ8017L1Z5</div>
-                </div>
-                <div class="footer-info-container">
-                    <div class="footer-heading-col hours-col">
-                        <div class="footer-heading">Hours</div>
-                        <div class="hours">
-                            <div class="days">
-                                <div class="day">Monday<br/>Tuesday<br/>Wednesday<br/>Thursday</div>
-                                <div class="time">10 am - 9 pm<br/>10 am - 9 pm<br/>10 am - 9 pm<br/>10 am - 9 pm</div>
-                            </div>
-                            <div class="days"> 
-                                <div class="day">Friday<br/>Saturday<br/>Sunday</div>
-                                <div class="time">10 am - 9 pm<br/>10 am - 9 pm<br/>10 am - 9 pm</div>
-                            </div>
-                        </div>    
-                    </div>
-                    <div class="footer-heading-col collection-col">
-                        <div class="footer-heading">Collections</div>
-                        <a href="./Collection" class="footer-collection">Tissomi</a>
-                    </div>
-                    <div class="footer-heading-col">
-                        <div class="footer-heading">Located at</div>
-                        <a href="https://maps.app.goo.gl/is2dXug5mt72gvUo8" 
-                            target="_blank" class="address">
-                            TexIndienne </br>
-                            306, Kalbadevi Road, </br>
-                            Mumbai 400002, </br>
-                            MH, India
-                        </a>
-                    </div>
-                    <div class="footer-heading-col reach-us-mob">
-                        <div class="footer-heading">Call us at</div>
-                        <a href="tel:+918591392454" class="phone">+91 8591392454</a>
-                        <div class="social-icons-mobile">
-                            <a href="https://wa.me/+918591392454" target="_blank">
-                                <img class="footer-social-img" src="./Images/Footer/whatsapp.png" alt="Social Icon 3" />
-                            </a>
-                            <a href="https://www.instagram.com/texindienne/" target="_blank">
-                                <img class="footer-social-img" src="./Images/Footer/instagram.png" alt="Social Icon 1" />
-                            </a>
-                            <a href="https://www.linkedin.com/company/texindienne" target="_blank">
-                                <img class="footer-social-img" src="./Images/Footer/linkedln.png" alt="Social Icon 2" />
-                            </a>
-                        </div>
-                    </div>
-                    <div class="footer-heading-col reach-us">
-                        <div class="footer-heading">Reach us at</div>
-                        <div class="social-icons">
-                            <a href="https://wa.me/+918591392454" target="_blank">
-                                <img class="footer-social-img" src="./Images/Footer/whatsapp.png" alt="Social Icon 3" />
-                            </a>
-                            <a href="https://www.instagram.com/texindienne/" target="_blank">
-                                <img class="footer-social-img" src="./Images/Footer/instagram.png" alt="Social Icon 1" />
-                            </a>
-                            <a href="https://www.linkedin.com/company/texindienne" target="_blank">
-                                <img class="footer-social-img" src="./Images/Footer/linkedln.png" alt="Social Icon 2" />
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>    
+    <div id="site-footer"></div>  
 </body>
 
 </html>

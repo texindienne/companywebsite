@@ -1,9 +1,12 @@
 :root {
-    --tissomiprimary: #F2F1EB;
-    --tissomiprimaryweb: #FBF9EC;
-    --tissomisecondary: #343434;
-    --tissomisecondaryweb: #282828;
-    --tissomihighlightG: #CCA159;
+    --primary: #faf8f5;
+    --secondary: #3E4045;
+    --highlightB: #896B60;
+    --highlightG: #848A67;
+    --footer: #AAA393;
+    --tissomi: #cca159;
+    --tissomiback: #343434;
+    --tissomitext: #fbf9ec;
 }
 
 /* Main container styles */
@@ -11,7 +14,7 @@
     position: relative;
     width: 100vw;
     height: 100vh;
-    background-color: var(--tissomisecondaryweb);
+    background-color: var(--secondary);
 }
 
 /* Artistry text styles */
@@ -30,7 +33,7 @@
     height: 100%;
     object-fit: cover;
     z-index: 0; /* This is added to position the video behind other content */
-    background-color: var(--tissomisecondaryweb); /* Fallback color if the video doesn't load */
+    background-color: var(--secondary); /* Fallback color if the video doesn't load */
     mix-blend-mode: luminosity;
     opacity: 0.4;
 }
@@ -40,32 +43,31 @@
     width: 100%;
     padding-top: 70px;
     padding-bottom: 70px;
-    background: var(--tissomiprimary);
+    background: var(--primary);
     flex-direction: column;
     justify-content: center;
     align-items: center;
     display: inline-flex;
-    font-family: 'Montserrat', sans-serif;
 }
 
 .lightback {
-    background-color: var(--tissomiprimary);
+    background-color: var(--primary);
 }
 
 .darkback {
-    background-color: var(--tissomisecondary);
+    background-color: var(--secondary);
 }
 
 .light {
-    color: var(--tissomiprimary);
+    color: var(--primary);
 }
 
 .dark {
-    color: var(--tissomisecondary);
+    color: var(--secondary);
 }
 
 .gold {
-    color: var(--tissomihighlightG);
+    color: var(--tissomi);
 }
 
 
@@ -73,32 +75,32 @@
 .section-title {
     text-align: center;
     font-size: 32px;
-    font-weight: 500;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Cormorant Garamond',serif;
+    font-weight: 600;
 }
 
 /* Content styles */
 .content {
     max-width: 1000px;
     text-align: center;
-    font-size: 18px;
-    font-weight: 400;
-    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-family: 'Cormorant Garamond',serif;
+    font-weight: 500;
     word-wrap: break-word;
     line-height: 1.6;
     padding: 30px;
 }
 
 b {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
+    font-family: 'Cormorant Garamond',serif;
+    font-weight: 600;
 }
 
 .cta {
     max-width: 500px;
     padding: 30px;
     margin-top: 30px;
-    background: var(--tissomisecondaryweb);
+    background: var(--secondary);
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -110,10 +112,10 @@ b {
 .cta-title {
     align-self: stretch;
     text-align: center;
-    color: var(--tissomiprimaryweb);
+    color: var(--primary);
     font-size: 26px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
+    font-family: 'Cormorant Garamond',serif;
+    font-weight: 600;
     word-wrap: break-word;
 }
 
@@ -121,20 +123,19 @@ b {
 .cta-description {
     align-self: stretch;
     text-align: center;
-    color: var(--tissomiprimaryweb);
+    color: var(--primary);
     font-size: 18px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
+     font-family: 'Cormorant Garamond',serif;
+    font-weight: 500;
     word-wrap: break-word;
 }
 
 .learn-more {
     width: max-content;
-    font-size: 18px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
+    font-size: 20px;
+    font-weight: 600;
     text-align: center;
-    color: var(--tissomihighlightG);
+    color: var(--tissomi);
 }
 
 .learn-more:after {
@@ -143,7 +144,7 @@ b {
     margin: 1px 0;
     height: 1px;
     width: 0%;
-    background-color: var(--tissomiprimaryweb);
+    background-color: var(--primaryweb);
     display: block;
     transition: all 0.3s;
     left: 0;
@@ -210,7 +211,7 @@ b {
 
     .learn-more {
         font-size: 16px;
-        border-bottom: 1px var(--tissomiprimaryweb) solid;
+        border-bottom: 1px var(--primaryweb) solid;
     }
 
     .learn-more:after {

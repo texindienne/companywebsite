@@ -22,10 +22,18 @@
     flex-direction: column;
 }
 
-.footerlogo {
+/* Tissomi logo image in footer head */
+.footer-logo {
     color: #3E4045;
     font-size: 30px;
-    font-weight: 500;
+    font-family: 'Playfair Display', serif;
+    font-weight: 200;
+}
+
+/* "Marketed by TexIndienne" text */
+.footer-marketed {
+    color: #3E4045;
+    font-size: 18px;
     word-wrap: break-word;
 }
 
@@ -155,13 +163,8 @@
         margin-bottom: 15px;
     }
 
-    .footerlogo {
-        font-size: 30px;
-        width: fit-content;
-    }
-
-    .GST {
-        font-size: 16px;
+    .footer-logo {
+        font-size: 24px;
     }
 
     .footer-info-container {
@@ -170,10 +173,10 @@
     }
 
     .footer-heading-col {
-        flex-direction: row;
-        align-items: center;
+        flex-direction: column;
+        align-items:flex-start;
         width: fit-content;
-        gap: 15px;
+        gap: 5px;
     }
 
     .footer-heading {
@@ -184,13 +187,25 @@
         display: none;
     }
 
+    /* Marketed by — shown as plain text on mobile, no heading */
+    .marketed-col {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+    .footer-marketed {
+        font-size: 16px;
+    }
+
     .address {
         color: #3E4045;
         font-size: 16px;
         font-weight: 400;
         word-wrap: break-word;
     }
-    
+
     .phone {
         color: #3E4045;
         font-size: 16px;
@@ -198,7 +213,7 @@
         font-weight: 400;
         word-wrap: break-word;
     }
-    
+
     .reach-us {
         display: none;
     }
@@ -211,10 +226,5 @@
     .social-icons-mobile {
         display: flex;
         gap: 15px;
-
     }
-}
-/* Media query for smaller screens */
-@media screen and (max-width: 768px) {
-
 }
