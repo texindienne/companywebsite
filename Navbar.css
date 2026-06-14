@@ -381,7 +381,7 @@ a {
 
 .logoani {
     position: absolute;
-    height: 56px;
+    height: 120px;
     animation: loading 2s ease infinite;
 }
 
@@ -411,7 +411,7 @@ a {
 
 @media screen and (max-width: 768px) {
     .logoani {
-        height: 32px;
+        height: 80px;
     }
 }
 
