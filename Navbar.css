@@ -1,3 +1,15 @@
+/* ============================================================
+   TISSOMI — NAVBAR & GLOBAL RESET
+   ============================================================
+   This file handles:
+   1. Global CSS reset and base typography
+   2. Navbar layout, logo, desktop menu, dropdowns
+   3. Mobile slide-in menu and hamburger icon
+   4. Scrolled state (transparent → dark pill)
+   5. Page loader animation
+   Variables come from variables.css.
+   ============================================================ */
+
 * {
     margin: 0;
     padding: 0;
@@ -24,13 +36,12 @@ a {
     text-decoration: none;
 }
 
-
 .nav-container {
     max-width: 1170px;
     margin: auto;
 }
 
-/*header*/
+/* ---- Fixed header bar ---- */
 .header {
     position: fixed;
     width: 100%;
@@ -50,7 +61,7 @@ a {
 }
 
 .nav-logo {
-    color: var(--tissomi) !important;
+    color: var(--tissomi);
     font-size: 30px;
     font-family: 'Playfair Display', serif;
     font-weight: 200;
@@ -82,7 +93,6 @@ a {
     transition: all 0.3s ease;
     align-items: center;
 }
-
 
 .menu>.menu-item>a .plus {
     display: none;
@@ -230,7 +240,9 @@ a {
     display: none;
 }
 
-/* responsive */
+/* ============================================================
+   RESPONSIVE — MOBILE MENU (max 1040px)
+   ============================================================ */
 
 @media(max-width: 1040px) {
     .menu-overlay.active {
@@ -331,9 +343,10 @@ a {
     }
 }
 
-
-
-/* Styles to apply when the navbar is scrolled */
+/* ============================================================
+   SCROLLED STATE
+   When user scrolls past 50px, .scrolled is added by Navbar.js
+   ============================================================ */
 
 .header.scrolled .nav-main {
     background-color: var(--tissomiback);
@@ -351,7 +364,6 @@ a {
     background-color: var(--tissomiback);
 }
 
-
 .header.scrolled .nav-open-menu span {
     background-color: var(--tissomitext);
 }
@@ -365,8 +377,10 @@ a {
     color: var(--tissomitext);
 }
 
-
-/* logo loading animations */
+/* ============================================================
+   PAGE LOADER
+   Full-screen splash removed by Navbar.js on "load" event
+   ============================================================ */
 
 .logoani {
     position: absolute;

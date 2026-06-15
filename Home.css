@@ -3,6 +3,10 @@
    before this file. Use var(--name) to reference them here.
    ============================================================ */
 
+/* ============================================================
+   HOME PAGE STYLES
+   ============================================================ */
+
 body {
     height: -webkit-fill-available;
 }
@@ -19,7 +23,8 @@ body {
     background-color: var(--secondary);
 }
 
-/* View collection styles */
+
+/* ---- Hero section ---- */
 .link-holder {
     height: 26px;
     position: absolute;
@@ -35,46 +40,48 @@ body {
     top: 0;
     left: 0;
     text-align: center;
-    color: #FAF8F5;
+    color: var(--primary);
     font-size: 18px;
     font-weight: 500;
     border-bottom: 1px #FAF8F5 solid;
 }
 
-/* Artistry text styles */
+/* ---- Hero text ---- */
 .artistry-text {
     top: 30%;
     width: 60%;
     position: absolute;
     left: 20%;
     text-align: center;
-    color: #FAF7F5;
+    color: var(--primary);
     font-size: 96px;
     font-style: italic;
     font-weight: 500;
 }
 
-/* Styles for the container */
+
+/* ---- Content container ---- */
 .container {
     width: 100%;
     padding-top: 70px;
     padding-bottom: 70px;
-    background: #FAF8F5;
+    background: var(--primary);
     flex-direction: column;
     justify-content: center;
     align-items: center;
     display: inline-flex;
 }
 
-/* Title */
+/* ---- Section title ---- */
 .section-title {
     text-align: center;
-    color: #3E4045;
+    color: var(--secondary);
     font-size: 32px;
     font-weight: 600;
 }
 
-/* Services section */
+
+/* ---- What We Weave grid ---- */
 .services {
     display: grid;
     grid-template-columns: repeat(2, auto);
@@ -86,7 +93,7 @@ body {
     gap: 30px 100px;
 }
 
-/* Service block */
+/* Each fabric card */
 .service {
     display: flex;
     flex-direction: column;
@@ -96,7 +103,7 @@ body {
     max-width: 400px;
 }
 
-/* Service icon */
+/* Icon circle */
 .service-icon {
     width: 150px;
     height: 150px;
@@ -106,44 +113,44 @@ body {
     position: relative;
 }
 
-/* Service details */
+/* Card text */
 .service-details {
     height: auto;
     position: relative;
 }
 
-/* Service title */
+/* Card title */
 .service-title {
     max-width: 400px;
     padding-bottom: 15px;
     padding-top: 30px;
     text-align: center;
-    color: #3E4045;
+    color: var(--secondary);
     font-size: 24px;
     font-weight: 600;
 }
 
-/* Service description */
+/* Card description */
 .service-description {
     max-width: 400px;
     text-align: justify;
-    color: #3E4045;
+    color: var(--secondary);
     font-size: 18px;
     font-weight: 500;
 }
 
-/* Learn More section */
+
+/* ---- Learn More link ---- */
 .learn-more {
     width: max-content;
     font-size: 18px;
     font-weight: 600;
     text-align: center;
-    color: #3E4045;
+    color: var(--secondary);
 }
 
 .learn-more:after {
     content: '';
-    position: max-content;
     margin: 1px 0;
     height: 1px;
     width: 0%;
@@ -157,6 +164,8 @@ body {
     width: 100%;
 }
 
+
+/* ---- Certifications bar ---- */
 .certifications-section {
     width: 100%;
     background-color: var(--secondary);
@@ -188,11 +197,12 @@ body {
     object-fit: contain;
 }
 
-/* Content styles */
+
+/* ---- Our Story text block ---- */
 .content {
     max-width: 1000px;
     text-align: center;
-    color: #3E3F45;
+    color: var(--secondary);
     font-size: 18px;
     font-weight: 400;
     word-wrap: break-word;
@@ -208,6 +218,7 @@ body {
 }
 
 
+/* ---- Our Values section ---- */
 .values {
     padding: 30px;
     justify-content: flex-start;
@@ -242,6 +253,8 @@ body {
     width: 100%;
 }
 
+
+/* ---- What's New section ---- */
 .news-section {
     justify-content: center;
     align-items: flex-start;
@@ -271,7 +284,7 @@ body {
 .news-title {
     width: 200px;
     text-align: center;
-    color: #3E4045;
+    color: var(--secondary);
     font-size: 24px;
     font-family: 'Cormorant Garamond',serif;
     font-weight: 600;
@@ -281,26 +294,22 @@ body {
 .news-date {
     width: 200px;
     text-align: center;
-    color: #3E4045;
+    color: var(--secondary);
     font-size: 16px;
     font-family: 'Cormorant Garamond',serif;
     font-weight: 500;
     word-wrap: break-word;
 }
 
-
-@media screen and (min-width: 1280px) {
-    
-}
-
 /* Media query for smaller screens */
 @media screen and (max-width: 1024px) { 
-    /* Artistry text styles */
+    /* ---- Hero text ---- */
     .artistry-text {
         top: 20%;
     }
     
-    /* Services section */
+    
+/* ---- What We Weave grid ---- */
     .services {
         display: flex;
         flex-direction: column;
@@ -309,12 +318,16 @@ body {
     }
 
     /* values section */
-    .values {
+    
+/* ---- Our Values section ---- */
+.values {
         flex-direction: column;
         gap: 30px;
     }
     
-    .news-section {
+    
+/* ---- What's New section ---- */
+.news-section {
         gap: 50px;
     }
 }
@@ -325,7 +338,7 @@ body {
         padding: 50px 0;
     }
     
-    /* Artistry text styles */
+    /* ---- Hero text ---- */
     .artistry-text {
         top: 25%;
         font-size: 72px;
@@ -340,17 +353,19 @@ body {
         font-size: 16px;
     }
 
-    /* Service title */
+    /* Card title */
     .service-title {
         font-size: 18px;
     }
 
-    /* Service description */
+    /* Card description */
     .service-description {
         font-size: 16px;
     }
 
-    .certifications-section {
+    
+/* ---- Certifications bar ---- */
+.certifications-section {
         padding: 80px 50px;
     }
 
@@ -364,7 +379,9 @@ body {
         height: 80px;
     }
 
-    .news-section {
+    
+/* ---- What's New section ---- */
+.news-section {
         flex-direction: column;
         gap: 30px;
     }
@@ -389,7 +406,7 @@ body {
 
 /* Small devices such as large phones (640px and up) */
 @media screen and (max-width: 540px) {
-    /* Artistry text styles */
+    /* ---- Hero text ---- */
     .artistry-text {
         top: 25%;
         font-size: 56px;

@@ -3,7 +3,11 @@
    before this file. Use var(--name) to reference them here.
    ============================================================ */
 
-/* Main container styles */
+/* ============================================================
+   CAREERS PAGE STYLES
+   ============================================================ */
+
+/* ---- Hero ---- */
 .main-container {
     position: relative;
     width: 100vw;
@@ -14,7 +18,7 @@
     background-color: var(--primary);
 }
 
-/* Artistry text styles */
+/* ---- Hero text ---- */
 .artistry-text {
     top: 30%;
     width: 60%;
@@ -27,12 +31,13 @@
     font-weight: 500;
 }
 
-/* Container styles */
+
+/* ---- Content container ---- */
 .container {
     width: 100%;
     height: 100%;
     padding: 70px 40px;
-    background: #FAF8F5;
+    background: var(--primary);
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
@@ -40,17 +45,18 @@
     gap: 30px;
 }
 
-/* Title styles */
+/* ---- Section title ---- */
 .title {
     align-self: stretch;
     text-align: center;
-    color: #3E4045;
+    color: var(--secondary);
     font-size: 32px;
     font-weight: 600;
     word-wrap: break-word;
 }
 
-/* Section content styles */
+
+/* ---- Section content ---- */
 .section-content {
     align-self: stretch;
     display: flex;
@@ -59,19 +65,20 @@
     gap: 30px;
 }
 
-/* Text content styles */
+/* ---- Body text ---- */
 .text-content {
     margin: auto;
     max-width: 1000px;
     align-self: stretch;
     text-align: justify;
-    color: #3E4045;
+    color: var(--secondary);
     font-size: 18px;
     font-weight: 500;
     word-wrap: break-word;
 }
 
-/* Section image styles */
+
+/* ---- Full-width image strips ---- */
 .section-image {
     height: 70vh;
     background-image: url(./Images/Careers/Career1.png);
@@ -79,35 +86,37 @@
     background-size: cover;
 }
 
-/* Feature styles */
+
+/* ---- Why Choose Us features ---- */
 .feature {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
-/* Feature title styles */
+/* Feature heading */
 .feature-title {
     max-width: 1000px;
-    color: #3E4045;
+    color: var(--secondary);
     font-size: 18px;
     font-weight: 600;
     word-wrap: break-word;
 }
 
-/* Feature description styles */
+/* Feature body */
 .feature-description {
     max-width: 1000px;
     left: 0px;
     top: 39px;
     text-align: justify;
-    color: #3E4045;
+    color: var(--secondary);
     font-size: 18px;
     font-weight: 500;
     word-wrap: break-word;
 }
 
-/* Section image styles */
+
+/* ---- Full-width image strips ---- */
 .section-image2 {
     height: 70vh;
     background-image: url(./Images/Careers/Career3.jpeg);
@@ -115,6 +124,8 @@
     background-size: cover;
 }
 
+
+/* ---- How We Are section ---- */
 .section-how {
     display: flex;
     gap: 80px;
@@ -144,23 +155,24 @@
 }
 
 .how-text-title {
-    color: #3E4045;
+    color: var(--secondary);
     font-size: 18px;
     font-weight: 600;
     word-wrap: break-word;
 }
 
 .how-text-content {
-    color: #3E4045;
+    color: var(--secondary);
     font-size: 18px;
     font-weight: 500;
     word-wrap: break-word;
 }
 
-/* CTA styles */
+
+/* ---- Call-to-action (Join Us) ---- */
 .cta {
     padding: 30px;
-    background: #3E4045;
+    background: var(--secondary);
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -172,7 +184,7 @@
 .cta-title {
     align-self: stretch;
     text-align: center;
-    color: #FAF8F5;
+    color: var(--primary);
     font-size: 32px;
     font-weight: 600;
     word-wrap: break-word;
@@ -182,7 +194,7 @@
 .cta-description {
     align-self: stretch;
     text-align: center;
-    color: #FAF8F5;
+    color: var(--primary);
     font-size: 18px;
     font-weight: 500;
     word-wrap: break-word;
@@ -198,7 +210,6 @@
 
 .learn-more:after {
     content: '';
-    position: max-content;
     margin: 4px 0;
     height: 1px;
     width: 0%;
@@ -222,7 +233,6 @@
 
 .learn-more2:after {
     content: '';
-    position: max-content;
     margin: 1px 0;
     height: 1px;
     width: 0%;
@@ -236,14 +246,10 @@
     width: 100%;
 }
 
-
-
-@media screen and (min-width: 1280px) {}
-
 /* Media query for smaller screens */
 @media screen and (max-width: 1024px) {
 
-    /* Artistry text styles */
+    /* ---- Hero text ---- */
     .artistry-text {
         top: 20%;
     }
@@ -260,7 +266,9 @@
         max-width: 80%;
     }
 
-    .section-how {
+    
+/* ---- How We Are section ---- */
+.section-how {
         align-items: center;
         justify-content: center;
     }
@@ -269,7 +277,7 @@
 /* Media query for smaller screens */
 @media screen and (max-width: 768px) {
 
-    /* Artistry text styles */
+    /* ---- Hero text ---- */
     .artistry-text {
         top: 25%;
         font-size: 72px;
@@ -291,17 +299,17 @@
         max-width: 90%;
     }
 
-    /* Title styles */
+    /* ---- Section title ---- */
     .title {
         font-size: 30px;
     }
 
-    /* Text content styles */
+    /* ---- Body text ---- */
     .text-content {
         font-size: 16px;
     }
 
-    /* Feature title styles */
+    /* Feature heading */
     .feature-title {
         font-size: 18px;
     }
@@ -350,7 +358,7 @@
 /* Small devices such as large phones (640px and up) */
 @media screen and (max-width: 540px) {
 
-    /* Artistry text styles */
+    /* ---- Hero text ---- */
     .artistry-text {
         top: 25%;
         font-size: 56px;

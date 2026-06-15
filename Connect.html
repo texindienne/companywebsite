@@ -4,29 +4,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="referrer" content="origin">
-    <script src="https://kit.fontawesome.com/b172f043b0.js" crossorigin="anonymous"></script>  
-    <link href="./variables.css" rel="stylesheet" />
-    <link href="./Navbar.css" rel="stylesheet" />
-    <link href="./Footer.css" rel="stylesheet" />
-    <link href="./Connect.css" rel="stylesheet" />
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/b172f043b0.js" crossorigin="anonymous"></script>
+
+    <!-- Styles: variables first, then shared, then page-specific -->
+    <link href="./variables.css" rel="stylesheet">
+    <link href="./Navbar.css" rel="stylesheet">
+    <link href="./Footer.css" rel="stylesheet">
+    <link href="./Connect.css" rel="stylesheet">
+
     <title>Connect | Tissomi</title>
 </head>
+
 <body>
+    <!-- Shared navbar and footer injected by Navbar.js and Footer.js -->
     <script src="./Navbar.js"></script>
     <script src="./Footer.js"></script>
+
+    <!-- Page loader: shown until JS fires, then removed -->
     <div class="loader">
-        <img src="./Images/Tissomi_transparent.png" class="logoani">
+        <img src="./Images/Tissomi_transparent.png" class="logoani" alt="Tissomi">
     </div>
 
+    <!-- Navbar placeholder: populated by Navbar.js -->
     <div id="site-navbar"></div>
 
-    <div class="main-container">
+    <!-- ============================================
+         Connect — page content
+         ============================================ -->
+<div class="main-container">
         <div class="artistry-text">Connect</div>
     </div>
 
@@ -45,7 +57,7 @@
         </div>
     </div>
 
-    <div class="container" style="padding-top: 0;">
+    <div class="container" style="padding-top:0">
         <div class="title">Contact Us</div>
             <div class="contact-content">
                 <div class="left-side">
@@ -55,15 +67,15 @@
                         <a href="https://maps.app.goo.gl/P91viqStYv65t1548" 
                             target="_blank" class="text-one">
                             Tissomi<br/>
-                            306, Kalbadevi Road, </br>
-                            Mumbai 400002, </br>
+                            306, Kalbadevi Road, <br>
+                            Mumbai 400002, <br>
                             MH, India
                         </a>
                     </div>
                     <div class="phone details">
                         <i class="fas fa-phone-alt"></i>
                         <div class="topic">Phone</div>
-                        <a href="tel:+918591392454" style="font-family: 'Garamond';" class="text-one">+91 8591392454</a>
+                        <a href="tel:+918591392454" class="text-one phone-link">+91 8591392454</a>
                     </div>
                     <div class="email details">
                         <i class="fas fa-envelope"></i>
@@ -105,7 +117,8 @@
             </div>
     </div>
 
-    <div id="site-footer"></div>   
+    <!-- Footer placeholder: populated by Footer.js -->
+    <div id="site-footer"></div>
 </body>
 
 </html>

@@ -4,29 +4,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
-        rel="stylesheet">
-    <script src="https://kit.fontawesome.com/b172f043b0.js" crossorigin="anonymous"></script>    
-    <link href="./variables.css" rel="stylesheet" />
-    <link href="./Navbar.css" rel="stylesheet" />
-    <link href="./Footer.css" rel="stylesheet" />
-    <link href="./Home.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/b172f043b0.js" crossorigin="anonymous"></script>
+
+    <!-- Styles: variables first, then shared, then page-specific -->
+    <link href="./variables.css" rel="stylesheet">
+    <link href="./Navbar.css" rel="stylesheet">
+    <link href="./Footer.css" rel="stylesheet">
+    <link href="./Home.css" rel="stylesheet">
+
     <title>Tissomi</title>
 </head>
 
 <body>
+    <!-- Shared navbar and footer injected by Navbar.js and Footer.js -->
     <script src="./Navbar.js"></script>
     <script src="./Footer.js"></script>
+
+    <!-- Page loader: shown until JS fires, then removed -->
     <div class="loader">
-        <img src="./Images/Tissomi_transparent.png" class="logoani">
+        <img src="./Images/Tissomi_transparent.png" class="logoani" alt="Tissomi">
     </div>
 
+    <!-- Navbar placeholder: populated by Navbar.js -->
     <div id="site-navbar"></div>
 
-    <div class="main-container">
+    <!-- ============================================
+         Home — page content
+         ============================================ -->
+<div class="main-container">
         <div class="link-holder">
             <a href="./Collection" class="link-text">View Collection</a>
         </div>
@@ -165,7 +177,7 @@
         <a href="./Values" class="learn-more">Learn More about our Values</a>
     </div>
 
-    <div class="container" style="padding-top: 0;">
+    <div class="container" style="padding-top:0">
         <div class="section-title">What’s New</div>
         <div class="news-section">
             <a class="news-item" target="_blank" href="https://texindienne.wixsite.com/blogtex/post/the-textile-tapestry-how-the-textile-industry-weaves-global-fashion-trends">
@@ -193,8 +205,8 @@
         <a href="https://texindienne.wixsite.com/blogtex" target="_blank" class="learn-more">Discover Our Fabric Stories</a>
     </div>
 
-    <div id="site-footer"></div>  
-
+    <!-- Footer placeholder: populated by Footer.js -->
+    <div id="site-footer"></div>
 </body>
 
 </html>

@@ -3,7 +3,11 @@
    before this file. Use var(--name) to reference them here.
    ============================================================ */
 
-/* Main container styles */
+/* ============================================================
+   STRATEGY PAGE STYLES (What We Weave)
+   ============================================================ */
+
+/* ---- Hero ---- */
 .main-container {
     position: relative;
     width: 100vw;
@@ -15,7 +19,7 @@
     font-family: 'Cormorat Garamond', serif;
 }
 
-/* Artistry text styles */
+/* ---- Hero text ---- */
 .artistry-text {
     top: 35%;
     width: 60%;
@@ -28,7 +32,8 @@
     font-weight: 500;
 }
 
-/* Container styles */
+
+/* ---- Content container ---- */
 .container {
     width: 100%;
     height: 100%;
@@ -41,13 +46,15 @@
     gap: 30px;
 }
 
+
+/* ---- Intro heading + text ---- */
 .core-values-heading {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
-/* Title styles */
+/* ---- Section title ---- */
 .title {
     align-self: stretch;
     text-align: center;
@@ -69,7 +76,7 @@
 }
 
 
-/* Core values section styles */
+/* ---- Fabric pillar rows ---- */
 .pillar-section {
     width: 100%;
     display: flex;
@@ -131,7 +138,8 @@
     word-wrap: break-word;
 }
 
-/* Styles for sustainability section */
+
+/* ---- Sustainability section ---- */
 .sustainability {
     padding-bottom: 70px;
     background: var(--primary);
@@ -142,7 +150,7 @@
     gap: 30px;
 }
 
-/* Styles for sustainability title */
+/* Section title */
 .sustainability-title {
     text-align: center;
     color: var(--secondary);
@@ -151,7 +159,7 @@
     word-wrap: break-word;
 }
 
-/* Styles for sustainability approach details */
+/* Pillars grid */
 .sustainability-pillars {
     display: grid;
     grid-template-columns: repeat(2, auto);
@@ -160,7 +168,7 @@
     gap: 30px;
 }
 
-/* Styles for each sustainability approach detail */
+/* Each pillar */
 .sustainability-pillar {
     flex-direction: column;
     justify-content: flex-start;
@@ -171,23 +179,19 @@
     padding: 0 35px;
 }
 
-/* Styles for sustainability approach titles */
+/* Icon circle */
 .pillar-circle {
     max-width: 200px;
-    border-radius: 40px;
-    padding: 40px;
-    background: #848A67;
-    border-radius: 9999px;
-    align-items: center;
-    justify-content: center;
     padding: 30px;
+    background: var(--highlightG);
+    border-radius: 9999px;
 }
 
 .pillar-img {
     width: 100%;
 }
 
-/* Styles for sustainability approach descriptions */
+/* Description text */
 .pillar-description {
     font-size: 18px;
 }
@@ -202,7 +206,6 @@
 
 .learn-more:after {
     content: '';
-    position: max-content;
     margin: 1px 0;
     height: 1px;
     width: 0%;
@@ -215,8 +218,6 @@
 .learn-more:hover:after {
     width: 100%;
 }
-
-@media screen and (min-width: 1280px) {}
 
 /* Media query for smaller screens */
 @media screen and (max-width: 1024px) {
@@ -240,7 +241,8 @@
         width: 100%;
     }
 
-    /* Styles for sustainability section */
+    
+/* ---- Sustainability section ---- */
     .sustainability {
         padding: 0 40px 50px 40px;
     }
@@ -254,7 +256,7 @@
 /* Media query for smaller screens */
 @media screen and (max-width: 768px) {
 
-    /* Artistry text styles */
+    /* ---- Hero text ---- */
     .artistry-text {
         top: 35%;
         font-size: 72px;
@@ -264,11 +266,13 @@
         padding: 50px 30px;
     }
 
-    .core-values-heading {
+    
+/* ---- Intro heading + text ---- */
+.core-values-heading {
         gap: 10px;
     }
 
-    /* Title styles */
+    /* ---- Section title ---- */
     .title {
         font-size: 30px;
     }
@@ -277,8 +281,8 @@
         font-size: 16px;
     }
 
-
-    /* Core values section styles */
+    
+/* ---- Fabric pillar rows ---- */
     .pillar-section {
         gap: 15px;
     }
@@ -318,29 +322,30 @@
         word-wrap: break-word;
     }
 
-    /* Styles for sustainability section */
+    
+/* ---- Sustainability section ---- */
     .sustainability {
         gap: 30px;
     }
 
-    /* Styles for sustainability title */
+    /* Section title */
     .sustainability-title {
         font-size: 30px;
     }
 
-    /* Styles for sustainability approach details */
+    /* Pillars grid */
     .sustainability-pillars {
         display: flex;
         flex-direction: column;
         gap: 15px;
     }
 
-    /* Styles for sustainability approach details */
+    /* Pillars grid */
     .sustainability-pillar {
         gap: 10px;
     }
 
-    /* Styles for sustainability approach descriptions */
+    /* Description text */
     .pillar-description {
         font-size: 16px;
     }
@@ -364,7 +369,7 @@
 /* Small devices such as large phones (640px and up) */
 @media screen and (max-width: 540px) {
 
-    /* Artistry text styles */
+    /* ---- Hero text ---- */
     .artistry-text {
         top: 40%;
         font-size: 56px;

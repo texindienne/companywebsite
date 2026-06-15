@@ -3,7 +3,11 @@
    before this file. Use var(--name) to reference them here.
    ============================================================ */
 
-/* Main container styles */
+/* ============================================================
+   DISTRIBUTION PAGE STYLES
+   ============================================================ */
+
+/* ---- Hero ---- */
 .main-container {
     position: relative;
     width: 100vw;
@@ -14,31 +18,31 @@
     background-color: var(--secondary);
 }
 
-/* Artistry text styles */
+/* ---- Hero text ---- */
 .artistry-text {
     top: calc(50% - 40px);
     width: 60%;
     position: absolute;
     left: 20%;
     text-align: center;
-    color: #FAF7F5;
+    color: var(--primary);
     font-size: 96px;
     font-style: italic;
     font-weight: 500;
 }
 
-/* Styles for the container */
+/* ---- Content container ---- */
 .container {
     width: 100%;
     padding: 70px 40px;
-    background: #FAF8F5;
+    background: var(--primary);
     flex-direction: column;
     justify-content: center;
     align-items: center;
     display: inline-flex;
 }
 
-/* Section styles */
+/* ---- Section wrapper ---- */
 .section {
     align-self: stretch;
     flex-direction: column;
@@ -49,25 +53,17 @@
     padding-bottom: 30px;
 }
 
-/* Title styles */
+/* ---- Section title ---- */
 .title {
     align-self: stretch;
     text-align: center;
-    color: #3E4045;
+    color: var(--secondary);
     font-size: 32px;
     font-weight: 600;
     word-wrap: break-word;
 }
 
-.team {
-    display: grid;
-    grid-template-columns: repeat(1, max-content);
-    gap: 50px;
-    align-items: center;
-    justify-content: center;
-}
-
-/* Distribution table styles */
+/* ---- Distribution table ---- */
 .distribution-table-wrapper {
     width: 100%;
     max-width: 1000px;
@@ -78,7 +74,7 @@
     width: 100%;
     border-collapse: collapse;
     font-size: 18px;
-    color: #3E4045;
+    color: var(--secondary);
     margin-bottom: 20px;
 }
  
@@ -110,46 +106,7 @@
     background-color: #ece8e0;
 }
 
-/* Team member styles */
-.team-member {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    display: inline-flex;
-}
-
-/* Member image styles */
-.member-img {
-    max-width: 300px;
-    max-height: 300px;
-}
-
-.member-details {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-/* Member name styles */
-.member-name {
-    text-align: center;
-    color: black;
-    font-size: 24px;
-    font-weight: 600;
-    word-wrap: break-word;
-}
-
-/* Member role styles */
-.member-role {
-    text-align: center;
-    color: black;
-    font-size: 18px;
-    font-weight: 500;
-    word-wrap: break-word;
-}
-
-/* Founder message styles */
+/* ---- Founder message ---- */
 .founder-message {
     max-width: 1000px;
     justify-content: center;
@@ -158,14 +115,14 @@
     display: inline-flex;
 }
 
-/* Founder image styles */
+/* Founder photo */
 .founder-img {
     max-width: 300px;
     max-height: 300px;
     border-radius: 200px;
 }
 
-/* Founder quote styles */
+/* Quote wrapper */
 .founder-quote {
     flex: 1 1 0;
     flex-direction: column;
@@ -175,50 +132,13 @@
     display: inline-flex;
 }
 
-/* Founder message styles */
+/* ---- Founder message ---- */
 .quote {
     align-self: stretch;
-    color: #3E4045;
+    color: var(--secondary);
     font-size: 20px;
     font-weight: 500;
     font-style: italic;
-    word-wrap: break-word;
-}
-
-/* Team image styles */
-.team-img {
-    max-width: 100%;
-}
-
-/* CTA styles */
-.cta {
-    height: 179.58px;
-    padding: 30px;
-    background: #3E4045;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-    display: flex;
-}
-
-/* CTA title styles */
-.cta-title {
-    align-self: stretch;
-    text-align: center;
-    color: #FAF8F5;
-    font-size: 32px;
-    font-weight: 600;
-    word-wrap: break-word;
-}
-
-/* CTA description styles */
-.cta-description {
-    align-self: stretch;
-    text-align: center;
-    color: #FAF8F5;
-    font-size: 20px;
-    font-weight: 500;
     word-wrap: break-word;
 }
 
@@ -230,33 +150,9 @@
     color: var(--primary);
 }
 
-.learn-more:after {
-    content: '';
-    position: max-content;
-    margin: 1px 0;
-    height: 1px;
-    width: 0%;
-    background-color: var(--primary);
-    display: block;
-    transition: all 0.3s;
-    left: 0;
-}
-
-.learn-more:hover:after {
-    width: 100%;
-}
-
-
-@media screen and (max-width: 1024px) {
-    .team {
-        display: flex;
-        flex-direction: column;
-    }
-}
-
 /* Media query for smaller screens */
 @media screen and (max-width: 768px) {
-    /* Artistry text styles */
+    /* ---- Hero text ---- */
     .artistry-text {
         font-size: 72px;
     }
@@ -265,7 +161,8 @@
         padding: 50px 30px;
     }
 
-    /* Founder message styles */
+    
+/* ---- Founder message ---- */
     .founder-message {
         flex-direction: column;
         gap: 30px;
@@ -318,7 +215,7 @@
 
 /* Small devices such as large phones (640px and up) */
 @media screen and (max-width: 540px) {
-    /* Artistry text styles */
+    /* ---- Hero text ---- */
     .artistry-text {
         font-size: 56px;
     }

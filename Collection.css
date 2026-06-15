@@ -3,7 +3,11 @@
    before this file. Use var(--name) to reference them here.
    ============================================================ */
 
-/* Main container styles */
+/* ============================================================
+   COLLECTION PAGE STYLES
+   ============================================================ */
+
+/* ---- Hero (video background) ---- */
 .main-container {
     position: relative;
     width: 100vw;
@@ -11,7 +15,7 @@
     background-color: var(--secondary);
 }
 
-/* Artistry text styles */
+/* ---- Hero image (Tissomi wordmark) ---- */
 .artistry-img {
     position: absolute;
     width: 600px;
@@ -19,6 +23,7 @@
     top: calc(50% - 96px);
 }
 
+/* Background video behind the wordmark */
 #background-video {
     position: absolute;
     left: 0;
@@ -32,7 +37,8 @@
     opacity: 0.4;
 }
 
-/* Styles for the container */
+
+/* ---- Content container ---- */
 .container {
     width: 100%;
     padding-top: 70px;
@@ -64,8 +70,7 @@
     color: var(--tissomi);
 }
 
-
-/* Title */
+/* ---- Section title ---- */
 .section-title {
     text-align: center;
     font-size: 32px;
@@ -73,7 +78,7 @@
     font-weight: 600;
 }
 
-/* Content styles */
+/* ---- Body text ---- */
 .content {
     max-width: 1000px;
     text-align: center;
@@ -90,6 +95,8 @@ b {
     font-weight: 600;
 }
 
+
+/* ---- CTA panel ---- */
 .cta {
     max-width: 500px;
     padding: 30px;
@@ -134,11 +141,10 @@ b {
 
 .learn-more:after {
     content: '';
-    position: max-content;
     margin: 1px 0;
     height: 1px;
     width: 0%;
-    background-color: var(--primaryweb);
+    background-color: var(--primary);
     display: block;
     transition: all 0.3s;
     left: 0;
@@ -148,6 +154,8 @@ b {
     width: 100%;
 }
 
+
+/* ---- Fabric design images grid ---- */
 .designs {
     display: flex;
     flex-wrap: wrap;
@@ -160,7 +168,6 @@ b {
     max-width: 400px;
 }
 
-
 @media screen and (max-width: 1024px) {
     .designimg {
         max-width: 300px;
@@ -169,7 +176,7 @@ b {
 
 /* Media query for smaller screens */
 @media screen and (max-width: 768px) {
-    /* Artistry text styles */
+    /* ---- Hero image (Tissomi wordmark) ---- */
     .artistry-img {
         width: 300px;
         left: calc(50% - 150px);
@@ -189,7 +196,9 @@ b {
         font-size: 16px;
     }
 
-    .cta {
+    
+/* ---- CTA panel ---- */
+.cta {
         max-width: 80%;
         margin: 0;
         gap: 10px;
@@ -205,7 +214,7 @@ b {
 
     .learn-more {
         font-size: 16px;
-        border-bottom: 1px var(--primaryweb) solid;
+        border-bottom: 1px var(--primary) solid;
     }
 
     .learn-more:after {
@@ -215,6 +224,3 @@ b {
 }
 
 /* Small devices such as large phones (640px and up) */
-@media screen and (max-width: 540px) {
-
-}

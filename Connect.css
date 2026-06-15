@@ -3,7 +3,11 @@
    before this file. Use var(--name) to reference them here.
    ============================================================ */
 
-/* Main container styles */
+/* ============================================================
+   CONNECT PAGE STYLES
+   ============================================================ */
+
+/* ---- Hero ---- */
 .main-container {
   position: relative;
   width: 100vw;
@@ -14,7 +18,7 @@
   background-color: var(--primary);
 }
 
-/* Artistry text styles */
+/* ---- Hero text ---- */
 .artistry-text {
   top: calc(50% - 50px);
   width: 60%;
@@ -27,7 +31,8 @@
   font-weight: 500;
 }
 
-/* Container styles */
+
+/* ---- Content container ---- */
 .container {
   width: 100%;
   height: 100%;
@@ -36,22 +41,22 @@
   justify-content: flex-start;
   align-items: center;
   display: flex;
-  flex-direction: column;
   gap: 30px;
   background-color: var(--primary);
 }
 
-/* Title styles */
+/* ---- Section title ---- */
 .title {
   align-self: stretch;
   text-align: center;
-  color: #3E4045;
+  color: var(--secondary);
   font-size: 32px;
   font-weight: 600;
   word-wrap: break-word;
 }
 
-/* Founder message styles */
+
+/* ---- Founder message section ---- */
 .founder-message {
     max-width: 1000px;
     justify-content: center;
@@ -60,14 +65,14 @@
     display: inline-flex;
 }
 
-/* Founder image styles */
+/* Founder photo */
 .founder-img {
     max-width: 300px;
     max-height: 300px;
     border-radius: 200px;
 }
 
-/* Founder quote styles */
+/* Quote wrapper */
 .founder-quote {
     flex: 1 1 0;
     flex-direction: column;
@@ -77,16 +82,19 @@
     display: inline-flex;
 }
 
-/* Founder message styles */
+
+/* ---- Founder message section ---- */
 .quote {
     align-self: stretch;
-    color: #3E4045;
+    color: var(--secondary);
     font-size: 20px;
     font-weight: 500;
     font-style: italic;
     word-wrap: break-word;
 }
 
+
+/* ---- Blog posts ---- */
 .blog {
   display: flex;
   justify-content: center;
@@ -111,7 +119,7 @@
 .date {
   max-width: 200px;
   height: 17px;
-  color: #3E4045;
+  color: var(--secondary);
   font-size: 16px;
   font-weight: 500;
   word-wrap: break-word;
@@ -120,7 +128,7 @@
 
 .blog-title {
   max-width: 700px;
-  color: #3E4045;
+  color: var(--secondary);
   font-size: 24px;
   font-weight: 600;
   word-wrap: break-word;
@@ -128,7 +136,7 @@
 
 .description {
   max-width: 700px;
-  color: #3E4045;
+  color: var(--secondary);
   font-size: 16px;
   font-weight: 500;
   word-wrap: break-word;
@@ -140,18 +148,18 @@
   mix-blend-mode: luminosity;
 }
 
-/* Learn More section */
+
+/* ---- Learn More link ---- */
 .learn-more {
   width: max-content;
   font-size: 18px;
   font-weight: 600;
   text-align: center;
-  color: #3E4045;
+  color: var(--secondary);
 }
 
 .learn-more:after {
   content: '';
-  position: max-content;
   margin: 1px 0;
   height: 1px;
   width: 0%;
@@ -165,6 +173,8 @@
   width: 100%;
 }
 
+
+/* ---- Contact form card ---- */
 .contact-content {
   display: flex;
   flex-direction: row;
@@ -177,6 +187,8 @@
   color: var(--primary);
 }
 
+
+/* Contact info panel (left) */
 .left-side {
   width: 25%;
   height: 100%;
@@ -230,6 +242,8 @@
   color: var(--primary);
 }
 
+
+/* Contact form (right) */
 .right-side {
   min-width: 500px;
   width: 75%;
@@ -297,22 +311,23 @@
   color: var(--primary);
 }
 
-
-@media screen and (min-width: 1280px) {}
-
 /* Media query for smaller screens */
 @media screen and (max-width: 1024px) {
 
-  /* Artistry text styles */
+  /* ---- Hero text ---- */
   .artistry-text {
     top: calc(50% - 50px);
   }
 
-  .contact-content {
+  
+/* ---- Contact form card ---- */
+.contact-content {
     flex-direction: column-reverse;
   }
 
-  .left-side {
+  
+/* Contact info panel (left) */
+.left-side {
     width: 100%;
     flex-direction: column-reverse;
     margin-top: 40px;
@@ -324,7 +339,9 @@
     display: none;
   }
 
-  .right-side {
+  
+/* Contact form (right) */
+.right-side {
     min-width: 0px;
     width: 100%;
     margin-left: 0;
@@ -335,7 +352,7 @@
 /* Media query for smaller screens */
 @media screen and (max-width: 768px) {
 
-  /* Artistry text styles */
+  /* ---- Hero text ---- */
   .artistry-text {
     top: calc(50% - 40px);
     font-size: 72px;
@@ -346,12 +363,13 @@
     gap: 30px;
   }
 
-  /* Title styles */
+  /* ---- Section title ---- */
   .title {
     font-size: 30px;
   }
 
-  /* Founder message styles */
+  
+/* ---- Founder message section ---- */
   .founder-message {
     flex-direction: column;
     gap: 30px;
@@ -395,7 +413,7 @@
 /* Small devices such as large phones (640px and up) */
 @media screen and (max-width: 540px) {
 
-  /* Artistry text styles */
+  /* ---- Hero text ---- */
   .artistry-text {
     top: calc(50% - 30px);
     font-size: 56px;
