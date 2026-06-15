@@ -1,9 +1,7 @@
-:root {
-    --primary: #FAF8F5;
-    --secondary: #3E4045;
-    --highlightB: #BFA57A;
-    --highlightG: #848A67;
-}
+/* ============================================================
+   Variables are defined in variables.css — imported in <head>
+   before this file. Use var(--name) to reference them here.
+   ============================================================ */
 
 body {
     height: -webkit-fill-available;

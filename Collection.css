@@ -1,13 +1,7 @@
-:root {
-    --primary: #faf8f5;
-    --secondary: #3E4045;
-    --highlightB: #896B60;
-    --highlightG: #848A67;
-    --footer: #AAA393;
-    --tissomi: #cca159;
-    --tissomiback: #343434;
-    --tissomitext: #fbf9ec;
-}
+/* ============================================================
+   Variables are defined in variables.css — imported in <head>
+   before this file. Use var(--name) to reference them here.
+   ============================================================ */
 
 /* Main container styles */
 .main-container {

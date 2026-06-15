@@ -61,7 +61,7 @@ const NAVBAR_HTML = `
                         <li class="menu-item menu-item-has-children">
                             <a data-toggle="sub-menu">CAREERS<i class="plus"></i></a>
                             <ul class="sub-menu">
-                                <li class="menu-item"><a href="./LifeatTi">LIFE AT TISSOMI</a></li>
+                                <li class="menu-item"><a href="./Careers">LIFE AT TISSOMI</a></li>
                                 <li class="menu-item">
                                     <a href="https://www.linkedin.com/company/texindienne" target="_blank">
                                         JOIN US

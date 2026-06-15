@@ -1,0 +1,27 @@
+/* ============================================================
+   TISSOMI — SHARED CSS VARIABLES
+   ============================================================
+   Import this file in every page's <head> BEFORE other CSS.
+   Defining variables here once avoids duplication across
+   every page stylesheet.
+
+   Usage in any CSS file:
+     color: var(--tissomiback);
+     background: var(--primary);
+   ============================================================ */
+
+:root {
+    /* ---- Page backgrounds & text ---- */
+    --primary:      #FAF8F5;   /* off-white — light page background */
+    --secondary:    #3E4045;   /* dark charcoal — dark backgrounds & text */
+
+    /* ---- Tissomi brand palette ---- */
+    --tissomi:      #CCA159;   /* gold accent */
+    --tissomiback:  #343434;   /* dark charcoal — navbar, loader, scrolled state */
+    --tissomitext:  #FBF9EC;   /* cream — text on dark backgrounds */
+
+    /* ---- Accent colours ---- */
+    --highlightB:   #BFA57A;   /* warm gold-brown — icon circles, pillars */
+    --highlightG:   #848A67;   /* muted green — value circles */
+    --footer:       #AAA393;   /* greige — footer background */
+}

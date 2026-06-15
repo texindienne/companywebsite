@@ -1,12 +1,22 @@
+/* ============================================================
+   TISSOMI — FOOTER STYLES
+   ============================================================
+   Styles for the shared footer injected by Footer.js.
+   Variables are defined in variables.css.
+   ============================================================ */
+
+
+/* ---- Outer wrapper ---- */
 .footer-container {
     width: 100%;
     height: 100%;
     position: relative;
 }
 
+/* ---- Footer bar ---- */
 .footer {
     width: 100%;
-    background: #AAA393;
+    background: var(--footer);
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -15,6 +25,11 @@
     padding: 30px;
 }
 
+
+/* ============================================================
+   FOOTER HEAD — logo + GST
+   ============================================================ */
+
 .footer-head {
     gap: 5px;
     align-items: center;
@@ -22,7 +37,7 @@
     flex-direction: column;
 }
 
-/* Tissomi logo image in footer head */
+/* Tissomi wordmark in footer */
 .footer-logo {
     color: #3E4045;
     font-size: 30px;
@@ -30,21 +45,10 @@
     font-weight: 200;
 }
 
-/* "Marketed by TexIndienne" text */
-.footer-marketed {
-    color: #3E4045;
-    font-size: 18px;
-    word-wrap: break-word;
-}
 
-.GST {
-    color: #3E4045;
-    font-size: 18px;
-    font-weight: 500;
-    word-wrap: break-word;
-    text-align: center;
-    font-family: 'Garamond';
-}
+/* ============================================================
+   FOOTER INFO COLUMNS
+   ============================================================ */
 
 .footer-info-container {
     width: 100%;
@@ -53,6 +57,7 @@
     gap: 30px;
 }
 
+/* Column heading (e.g. "Hours", "Located at") */
 .footer-heading {
     color: #3E4045;
     font-size: 18px;
@@ -60,12 +65,15 @@
     word-wrap: break-word;
 }
 
+/* Each column */
 .footer-heading-col {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
+
+/* ---- Hours column ---- */
 .hours {
     display: flex;
     justify-content: flex-start;
@@ -86,8 +94,6 @@
 }
 
 .time {
-    left: 218px;
-    top: 32px;
     color: #3E4045;
     font-size: 18px;
     font-weight: 400;
@@ -95,6 +101,8 @@
     word-wrap: break-word;
 }
 
+
+/* ---- Collections column ---- */
 .footer-collection {
     color: #3E4045;
     font-size: 18px;
@@ -102,6 +110,14 @@
     word-wrap: break-word;
 }
 
+/* ---- Marketed by column ---- */
+.footer-marketed {
+    color: #3E4045;
+    font-size: 18px;
+    word-wrap: break-word;
+}
+
+/* ---- Address ---- */
 .address {
     color: #3E4045;
     font-size: 18px;
@@ -109,6 +125,7 @@
     word-wrap: break-word;
 }
 
+/* ---- Phone ---- */
 .phone {
     color: #3E4045;
     font-size: 18px;
@@ -117,6 +134,8 @@
     word-wrap: break-word;
 }
 
+
+/* ---- Social icons (desktop) ---- */
 .social-icons {
     display: flex;
     gap: 15px;
@@ -126,34 +145,37 @@
     height: 26px;
 }
 
+/* Social icons mobile container — hidden by default, shown via mobile media query */
 .social-icons-mobile {
     display: none;
 }
 
-.address:hover {
-    opacity: 0.8;
-}
 
-.phone:hover {
-    opacity: 0.8;
-}
-
-.footer-collection:hover {
-    opacity: 0.8;
-}
-
+/* ---- Hover states ---- */
+.address:hover,
+.phone:hover,
+.footer-collection:hover,
 .footer-social-img:hover {
     opacity: 0.8;
 }
 
+
+/* ============================================================
+   RESPONSIVE — TABLET (max 1024px)
+   ============================================================ */
+
 @media screen and (max-width: 1024px) {
+    /* Hours column too wide for tablet — hide it */
     .hours-col {
         display: none;
     }
 }
 
 
-/* Media query for smaller screens */
+/* ============================================================
+   RESPONSIVE — MOBILE (max 768px)
+   ============================================================ */
+
 @media screen and (max-width: 768px) {
     .footer {
         gap: 0;
@@ -167,57 +189,53 @@
         font-size: 24px;
     }
 
+    .GST {
+        font-size: 14px;
+    }
+
+    /* Stack columns horizontally on mobile */
     .footer-info-container {
         flex-direction: row-reverse;
-        gap: 50px;
+        gap: 30px;
+        flex-wrap: wrap;
+        justify-content: flex-end;
     }
 
     .footer-heading-col {
         flex-direction: column;
-        align-items:flex-start;
+        align-items: flex-start;
         width: fit-content;
         gap: 5px;
     }
 
+    /* Hide column headings on mobile — content is self-explanatory */
     .footer-heading {
         display: none;
     }
 
+    /* Hide collections column on mobile */
     .collection-col {
         display: none;
     }
 
-    /* Marketed by — shown as plain text on mobile, no heading */
-    .marketed-col {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 5px;
+    .address {
+        font-size: 14px;
     }
 
     .footer-marketed {
-        font-size: 16px;
-    }
-
-    .address {
-        color: #3E4045;
-        font-size: 16px;
-        font-weight: 400;
-        word-wrap: break-word;
+        font-size: 14px;
     }
 
     .phone {
-        color: #3E4045;
-        font-size: 16px;
-        font-family: Garamond;
-        font-weight: 400;
-        word-wrap: break-word;
+        font-size: 14px;
     }
 
+    /* Desktop social icons column — hidden on mobile */
     .reach-us {
         display: none;
     }
 
+    /* Mobile-specific social icons column — shown on mobile */
     .reach-us-mob {
         display: flex;
         flex-direction: column;

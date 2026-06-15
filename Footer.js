@@ -23,7 +23,7 @@ const FOOTER_HTML = `
 
                 <!-- Logo -->
                 <div class="footer-head">
-                    <div class="footer-logo">TISSOMI</div>
+                    <div class="footer-logo">TISSOMI&reg;</div>
                 </div>
 
                 <div class="footer-info-container">
